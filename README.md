@@ -1,6 +1,22 @@
 # I want to try out the FX, what do I do
 Follow instructions in [here](howto/README.md).
 
+# I want to tip you some $
+Why thank you! See expandable section for more.
+<details>
+  I really wanted to use Github Sponsor option, but it is currently (ever?) not available in Russia. When it is available, I will migrate to it, if I ever have a need.
+  
+  I set up a "tips" page, in the tipping provider that I found to be least annoying and most accessible. Please read some items below, and proceed if you want.
+  
+  First of all, I don't need your last money. These are, as usual, trying times, so make sure to take care of yourself before you tipping a stranger. I do this for myself and my fun, and hope for community to catch my ideas up. Use and have fun.
+  
+  Second, I don't want regular donations. I don't see myself doing this on repeated basis, at least for now, so let's keep this non-commitment. Rather, think of buying me a coffee when you find these pages useful.
+  
+  And finally, "tipping" does not mean "hiring". I don't take commissions, don't teach or promise to deliver X if I get Y. Have questions - ask them, I will answer them for free if I can. Have suggestions? Fire away. Want to discuss something? Sure. Money will not be a factor here. Plus, I will not list any "sponsors", "patrons", whatever, with just a tipping page. With Github Sponsors I think it is automated and easy, and I will gladly do that, when (if) it is available. Manually - I would rather spend my time on something else.
+  
+  With that in mind, go [here](https://yoomoney.ru/quickpay/shop-widget?writer=buyer&targets=&targets-hint=Tips%20for%20modding%20FX&default-sum=100&button-text=13&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=4100117541059887).
+</details>
+
 # Now to the full README
 ## First of all
 This is by no means supported or otherwise authorized by Zoom Corporation.
