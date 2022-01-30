@@ -1,5 +1,5 @@
 # Chapter one – how to change a picture
-Get firmware flasher manipulator, pick one of listed in (README.md) or any other that you have.
+Get firmware flasher manipulator, pick one of listed in [README](README.md) or any other that you have.
 
 Get ZDL file you want to modify. Manipulators have them prepared, or can extract them. Grab the one you like to experiment upon.
 
@@ -9,19 +9,19 @@ With hex editor, open ZDL file, and cut off everything before ELF magic. Note, i
 
 Invoke the disassembler! Given you started with FOO.ZDL and named your truncated file FOO.ELF, call:
 * dis6x FOO.ELF foo.asm
-* dis6x FOO.ELF -b foo_data_as_bytes.asm
+* dis6x FOO.ELF -b -s foo_data_as_bytes.asm
 
-For now, use foo_data_as_bytes.asm. Find a section .data with name starting with pic or picture and effect name in it. Bingo, this is where the picture is encoded.
+For now, use foo_data_as_bytes.asm. Find a section .data with name starting with `pic` or `picture` and effect name in it. Bingo, this is where the picture is encoded.
 
 Copy the whole section, get rid of the .byte prefix and put a comma after each one but last. Text editor with macros can help a lot.
 
-Paste the resulting ledger of misery into [decoder](diy/decode_picture.py) into inputBytes and run.
+Paste the resulting ledger of misery into [decoder](../diy/decode_picture.py) into inputBytes and run.
 
 If everything goes well, you will have an ASCII presentation of the FX you are looking for.
 
 Edit at your heart’s desire, just keep resulting size smaller than original. Remember that used box symbols are quite to scale with pixels on screen, they are not squares but rectangles. In NPP, zoom out to full extend and it actually looks like the screen =)
 
- Ready? Copy your text into [encoder](diy/encode_picture.py) into inputText, and run.
+ Ready? Copy your text into [encoder](../diy/encode_picture.py) into inputText, and run.
 
 You will get a hex output at the bottom.
 
@@ -56,7 +56,7 @@ Modifying x and y of knobs actually worked for me. Do not forget to change corre
 
 Now, with modified ZDL, _replace_ the original ZDL you have, and flash it. I leave flashing instructions to tool you chose, they are typically simple and consist of three steps:
 * Boot effect in firmware mode, for Multistomp it is UP+DOWN pressed when powering the unit.
-* Run modified flasher
-* Wait until flashing is complete, close the flasher and power cycle the unit
+* Run modified flasher.
+* Wait until flashing is complete, close the flasher and power cycle the unit.
 
 You should have a modified visual by now!
