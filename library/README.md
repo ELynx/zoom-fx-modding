@@ -1,3 +1,6 @@
+# Story so far
+[Chaper 1 - modify the visual](CH_1.md). This will get you started on extracting, disassembling, modifying and flashing your FX.
+
 # General downloads and tools
 To get the flow started, you will need:
 * A hex editor of your choice. I used [wxMEdit](https://wxmedit.github.io/).
