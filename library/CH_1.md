@@ -60,7 +60,7 @@ Look for .data section with label that is called "effect type info" in `foo.asm`
 So far I know that structure is (by word):
 
 | Offset from label, in words | Value I saw  | My idea of what it is                                |
------------------------------------------------------------------------------------------------------
+|-----------------------------|--------------|------------------------------------------------------|
 | 0                           | 0            | ?                                                    |
 | 1                           | 1            | ?                                                    |
 | 2                           | 0            | ?                                                    |
@@ -97,7 +97,7 @@ Never edited it, had no need to.
 
 Remember that pixels are not square, and 20 x 15 is actually a circle on screen, if little edgy.
 
-#Baking it all together
+# Baking it all together
 Do not forget to apply _all_ the changes you want to ZDL.
 
 Now, with modified ZDL, _replace_ the original ZDL you have, with original name, where your flashing tool picks it up. Make sure your flashing tool is using your version.
