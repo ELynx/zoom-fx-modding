@@ -44,7 +44,7 @@ If you are doing this not for the first time, remember to replace file in `Z:\FO
   * Choose `Z:\FOO\files\effects\LINESEL.ZDL`
 * Tool will report with `Patching Complete!`. Click OK to close it.
 
-If you want, you can also back up patched file, in case you need to swap between original and modded and don't want to apply IPS again.
+If you want, you can also backup patched file, in case you need to swap between original and modded and don't want to apply IPS again.
 
 ## Section 3 - prepare and flash custom firmware
 Firmware is created with Zoom Firmware Manager. Launch it's executable from `Z:\FOO` folder, and follow the instructions for it.
@@ -61,7 +61,7 @@ Go back to Zoom Effect Manager.
 
 In the lower left corner, click `Write Effects`.
 
-Modified firmware update software will launch. This is the same software as for official firmmware update, just loaded with customized list of effects.
+Modified firmware update software will launch. This is the same software as for official firmware update, just loaded with customized list of effects.
 
 Within firmware update software, follow on-screen instructions. This is the actual flashing part.
 
@@ -79,13 +79,13 @@ RailSel was not meant to be used as on/off effect (however who am I to tell you 
 
 In "BOTH MIX" position, processed and original input signals are both sent to next FX (or output).
 
-In "L/R" position, left channel outputs processed signal, and right channel is overridded with original signal (for me this is same input, I have no FX unit with stereo input).
+In "L/R" position, left channel outputs processed signal, and right channel is replaced with original signal (for me this is same input, I have no FX unit with stereo input).
 
 Knobs control levels of processed (WET) and original (DRY) signals.
 
 In "L/R" position, right channel of previously stereo FX output is in general lost. Overall, built-in effects have strange relations to stereo / mono processing, but that is how whole FX was made, this particular mod just makes this little bit more noticeable.
 
-One hint I discovered within 5 minutes of messing with modded FX: original singal means original noise. My test source had high background hum which I cancelled with `ZNR` at the start of the chain. After modding, I moved it right after the RainSel, and it seems to handle modded output just fine.
+One hint I discovered within 5 minutes of messing with modded FX: original single means original noise. My test source had high background hum which I cancelled with `ZNR` at the start of the chain. After modding, I moved it right after the RainSel, and it seems to handle modded output just fine.
 
 ## Section 5 - restoring original effects
 
