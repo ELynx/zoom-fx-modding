@@ -17,6 +17,11 @@ Why thank you! See expandable section for more.
   With that in mind, go [here](https://yoomoney.ru/quickpay/shop-widget?writer=buyer&targets=&targets-hint=Tips%20for%20modding%20FX&default-sum=100&button-text=13&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=4100117541059887).
 </details>
 
+# What are those small patch cables?
+They are original Russian development produced and sold by [LexCable](https://www.lexcable.ru/).
+
+If you are interested, give them a visit and support them with a purchase. They are small independent business that need every bit of funds.
+
 # Now to the full README
 ## First of all
 This is by no means supported or otherwise authorized by Zoom Corporation.
