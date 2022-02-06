@@ -46,7 +46,7 @@ If you are doing this not for the first time, remember to replace file in `Z:\FO
 
 If you want, you can also backup patched file, in case you need to swap between original and modded and don't want to apply IPS again.
 
-## Section 3 - prepare and flash custom firmware
+# Section 3 - prepare and flash custom firmware
 Firmware is created with Zoom Firmware Manager. Launch it's executable from `Z:\FOO` folder, and follow the instructions for it.
 
 In simple terms, select your FX unit type, select effects you would like.
@@ -71,7 +71,7 @@ On FX unit, you will see a prompt to restart. Power cycle the unit.
 
 Congratulations, you are done! (Or my condolences, if this somehow failed.)
 
-## Section 4 - use the effect
+# Section 4 - use the effect
 
 RainSel had replaced all of instances of LineSel, if you had any. It may be a good time to visit saved patches and see if they still do what you expect.
 
@@ -87,6 +87,6 @@ In "L/R" position, right channel of previously stereo FX output is in general lo
 
 One hint I discovered within 5 minutes of messing with modded FX: original single means original noise. My test source had high background hum which I cancelled with `ZNR` at the start of the chain. After modding, I moved it right after the RainSel, and it seems to handle modded output just fine.
 
-## Section 5 - restoring original effects
+# Section 5 - restoring original effects
 
 If you want to roll back the changes, download original firmware update from official Zoom Co web site, and do the flashing steps again.
