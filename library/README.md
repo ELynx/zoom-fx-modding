@@ -5,7 +5,7 @@ This will get you started on extracting, disassembling, modifying and flashing y
 
 Strictly speaking, there is no need to know any assembly, or even programming at all, to do the above. I would recommend getting custom image for FX as a first step to verify that all the tools are set up, cables are in order and you know where each component is.
 
-[Chapter 2 - thoughts LineSel, making of RainSel](CH_2.md).
+[Chapter 2 - thoughts on LineSel, making of RainSel](CH_2.md).
 
 My thoughts and findings on LineSel, one of effects that was easiest to understand and test. Plus, more textual description of how I made RainSel inspired by it.
 
