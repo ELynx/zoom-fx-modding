@@ -1,0 +1,11 @@
+From disasm, leave only meaningful, good for comparison
+/^ *+;{0}[0-9a-zA-Z \.\*\[\]\,|\+\:\_\$\-\!]*/gm
+
+From disasm, leave only hex opcodes
+[0-9a-f]{8} *([0-9a-f]{2,8})
+
+From hex opcodes, rotate endiness
+Regex
+/(?'one'[0-9a-f]{2})(?'two'[0-9a-f]{2})(?'three'[0-9a-f]{0,2})(?'four'[0-9a-f]{0,2})/gm
+Substitution
+${four}${three}${two}${one}

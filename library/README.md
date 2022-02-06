@@ -1,9 +1,15 @@
 # Story so far
-[Chaper 1 - modify the visual](CH_1.md).
+[Chapter 1 - modify the visual](CH_1.md).
 
 This will get you started on extracting, disassembling, modifying and flashing your FX.
 
 Strictly speaking, there is no need to know any assembly, or even programming at all, to do the above. I would recommend getting custom image for FX as a first step to verify that all the tools are set up, cables are in order and you know where each component is.
+
+[Chapter 2 - thoughts LineSel, making of RainSel](CH_2.md).
+
+My thoughts and findings on LineSel, one of effects that was easiest to understand and test. Plus, more textual description of how I made RainSel inspired by it.
+
+This is where you follow after Chapter 1 if you want to make any effect yourself.
 
 # General downloads and tools
 To get the flow started, you will need:
@@ -12,6 +18,7 @@ To get the flow started, you will need:
 * For firmware flasher manipulations, go for [Zoom Firmware Editor](https://github.com/Barsik-Barbosik/Zoom-Firmware-Editor) or [Zoom Effect Manager](https://vk.com/zoomeffectmanager), they both work. And maybe they are the same software, just different versions. I highly recommend at least browsing through Java code of 1st one to know what the hell is actually happening under the hood; at time of writing, branch was more yummy then the trunk.
 * Note keeping / text editor / text macros. [Notepad++](https://notepad-plus-plus.org/) for me it is!
 * Some form of Python. I do not code in Python, so I just use [Online Python](https://www.online-python.com/).
+* Tool for regular expressions. I use my favorite online one [Regex 101](https://regex101.com/).
 
 Set it all up. They are mostly “extract and install”, you will not get lost there hopefully.
 
