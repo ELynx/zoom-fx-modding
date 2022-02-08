@@ -85,8 +85,10 @@ Knobs control levels of processed (WET) and original (DRY) signals.
 
 In "L/R" position, right channel of previously stereo FX output is in general lost. Overall, built-in effects have strange relations to stereo / mono processing, but that is how whole FX was made, this particular mod just makes this little bit more noticeable.
 
-One hint I discovered within 5 minutes of messing with modded FX: original single means original noise. My test source had high background hum which I cancelled with `ZNR` at the start of the chain. After modding, I moved it right after the RainSel, and it seems to handle modded output just fine.
+One hint I discovered within 5 minutes of messing with modded FX: original signal means original noise. My test source had high background hum which I cancelled with `ZNR` at the start of the chain. After modding, I moved it right after the RainSel, and it seems to handle modded output just fine. Try different positions of "Effect In / Guitar In" toggle on `ZNR` to see that works better for your chain.
 
 # Section 5 - restoring original effects
 
 If you want to roll back the changes, download original firmware update from official Zoom Co web site, and do the flashing steps again.
+
+If you want to just restore LineSel, but keep using Zoom Effect Manager, replace modified file with backup.
