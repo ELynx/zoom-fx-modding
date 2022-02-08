@@ -1,10 +1,10 @@
-From disasm, leave only meaningful, good for comparison
+From disasm: remove comments, useful for comparing commented asm and product of some disasm
 /^ *+;{0}[0-9a-zA-Z \.\*\[\]\,|\+\:\_\$\-\!]*/gm
 
-From disasm, leave only hex opcodes
+From disasm: remove addresses, leave only hex opcodes
 [0-9a-f]{8} *([0-9a-f]{2,8})
 
-From hex opcodes, rotate endiness
+From hex opcodes: rotate endiness; use substitution mode
 Regex
 /(?'one'[0-9a-f]{2})(?'two'[0-9a-f]{2})(?'three'[0-9a-f]{0,2})(?'four'[0-9a-f]{0,2})/gm
 Substitution
