@@ -132,12 +132,12 @@ Notice addition to output buffer, not overriding. To me this seems to be made to
 
 It is clear that some effects require not only silencing of Effect, but also of Guitar. One such effect is (IMO) `Bomber` that reacted only to raw Guitar signal. I accidentally learned this when I set Guitar to zero, and it was silent despite Effect actually coming through. `ZNR` has option to gate Effect or Guitar.
 
-Now you see why this is quite the trick book? This effect does not do much on itself, but _heavily_ messes with whole signal chain. From here, any combination of processed and dry signal is available, as well as options to modify any of them. Only limitation that is present is quite logical. Any modifications to output are not final. Next effect in chain will have its influence, and its only agreement that it should not be dropped. For example, you cannot _set_ output to some value, if this is not last effect, only _modify_ it.
+Now you see why this is quite the trick book? This effect does not do much on itself, but _heavily_ messes with whole signal chain. From here, any combination of processed and dry signal is available, as well as options to modify any of them. Only limitation that is present is quite logical. Any modifications to output are not final. Next effect in chain will have its influence, and its only agreement output value is modified by adding, not hard setting (and I think it is sometimes broken by FXes). For example, you cannot _set_ output to some value, if this is not last effect, only _modify_ it.
 
 ### And now to simple logic of RainSel
 `RainSel` does not work with output buffer _Y_ at all. I found that not very useful for different processing of L and R channels. Effects from unit that are placed next in chain have _very_ mixed logic of processing stereo signals.
 
-Similar situation goes with Guitar signal. There is no need to modify it here, since silencing of following effects are not necessary.
+Similar situation goes with Guitar signal. There is no need to modify it here, since silencing of following effect is not necessary.
 
 For `RainSel`, output is:
 
@@ -145,9 +145,9 @@ __ka__ x WET x _X_ + __kb__ x DRY x _phi_
 
 Initially, __ka__ is set to 1.0, and __kb__ is taken from __k0__.
 
-So, when effect is On, mode is "BOTH MIX". Output is a mix of Effect and Guitar signals. When effect is Off, L is only _X_ affected by knob.
+So, when effect is On, mode is "BOTH MIX". Output is a sum of Effect x WET and Guitar X DRY signals. When effect is Off, L is only _X_ x WET.
 
-For next pass, __ka__ and __kb__ are swapped. If __kb__ was 1.0, there is no difference and "BOTH MIX" logic applies. When effect is Off, R is only _phi_ affected by knob.
+For next pass, __ka__ and __kb__ are swapped. If __kb__ was 1.0, there is no difference and "BOTH MIX" logic applies. When effect is Off, R is only _phi_ X DRY.
 
 |        | __ka__ | __kb __ |
 |--------|--------|---------|
