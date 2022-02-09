@@ -4,7 +4,7 @@ This will be more conversational, and less instructive. I will explain how I mad
 
 To do something like this, you will need knowledge in programming. Low(er) level languages such as C/C++, or Assembly itself, are the best. You will also need pretty good reading and memory skills, since writing in assembly has _plethora_ of gotchas and details, and you need to keep them all in mind to do just about anything.
 
-I published the part of RainSel that I wrote, from [scraah](https://youtu.be/BZ_bhwCgtXg?t=565), in the [DIY section](diy/rainsel.asm). Hopefully, that will be an example that will shed some light on how the FX actually ticks.
+I published the part of RainSel that I wrote, from [scraah](https://youtu.be/BZ_bhwCgtXg?t=565), in the [DIY section](../diy/rainsel.asm). Hopefully, that will be an example that will shed some light on how the FX actually ticks.
 
 In my humble opinion, LineSel is both a good starting place, and trick book. I highy recommend putting it through disassembly process and reading the result. Just make sure that you have legally obtained copy of source material, and you do not publish what is not yours.
 
@@ -38,7 +38,7 @@ Now B4 holds a float value that represents if FX is On or Off. I will later on r
 
 Then, function call logic is applied in reverse: stack is released, return address is restored, jump to return address is initiated.
 
-Both of "edit" functions do (give or take) the same as "on off" function. Difference is in what is given as 2nd argument to "get parameters state" call. Efx gives 2, and Out gives 3. I assume these are IDs that happen in [Knob position](CH_1.md#optional-knob-positions). This is reinforced, because value 151 is used, and I assume this is "less than" border set on visually from 0 to 150 knob value.
+Both of "edit" functions do (give or take) the same as "on off" function. Difference is in what is given as 2nd argument to "get parameters state" call. Efx gives 2, and Out gives 3. I assume these are IDs that happen in [Knob positions](CH_1.md#optional-knob-positions). This is reinforced, because value 151 is used, and I assume this is "less than" border set on visually from 0 to 150 knob value.
 
 Next, see that by magic of address aritmetics, Efx is stored with offset 20, whereas Out is stored with offset 24, one word after another.
 
