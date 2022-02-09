@@ -54,7 +54,7 @@ Following OnOff, you will find other labels, including visible effect name and c
 
 After the label, there are stored maximum and default values for knobs; but so far, I think they are replaced with hardcoded constants (or derived values) across binary, so editing them will create some side effects. Did not try that one yet, had no need.
 
-#Optional: knob positions
+# Optional: knob positions
 Look for .data section with label that is called "effect type info" in `foo.asm`. It usually follows the bytes with image, or is at least close. Look for specific values, I expect 128 x 64 to be pretty universal.
 
 So far I know that structure is (by word):
