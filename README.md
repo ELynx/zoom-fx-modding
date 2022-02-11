@@ -1,6 +1,7 @@
 # RainSel 
 Media:
 <details>
+  
   <img src="https://github.com/ELynx/zoom-fx-modding/blob/69b56051f80618196cc8268f63214dac29746bba/media/photo.jpg" width=25% height=25%>
   
   I uploaded a video demo where you can hear L/R channels and corresponding knob positions.
@@ -18,9 +19,10 @@ Follow instructions in [here](howto/README.md).
 # I want to tip you some $
 Why thank you! See expandable section for more.
 <details>
+  
   I really wanted to use Github Sponsor option, but it is currently (ever?) not available in Russia. When it is available, I will migrate to it, if I ever have a need.
   
-  I set up a "tips" page, in the tipping provider that I found to be least annoying and most accessible. Please read some items below, and proceed if you want.
+  Please read some items below, and proceed if you want.
   
   First of all, I don't need your last money. These are, as usual, trying times, so make sure to take care of yourself before you tipping a stranger. I do this for myself and my fun, and hope for community to catch my ideas up. Use and have fun.
   
@@ -28,7 +30,19 @@ Why thank you! See expandable section for more.
   
   And finally, "tipping" does not mean "hiring". I don't take commissions, don't teach or promise to deliver X if I get Y. Have questions - ask them, I will answer them for free if I can. Have suggestions? Fire away. Want to discuss something? Sure. Money will not be a factor here. Plus, I will not list any "sponsors", "patrons", whatever, with just a tipping page. With Github Sponsors I think it is automated and easy, and I will gladly do that, when (if) it is available. Manually - I would rather spend my time on something else.
   
-  With that in mind, go [here](https://yoomoney.ru/quickpay/shop-widget?writer=buyer&targets=&targets-hint=Tips%20for%20modding%20FX&default-sum=100&button-text=13&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=4100117541059887).
+  With that in mind:
+  
+  Russian tipping provider is Yoomoney
+  
+  [![yoomoney](https://yoomoney.ru/i/shop/iomoney_icon_white_examle.png)](https://yoomoney.ru/quickpay/shop-widget?writer=buyer&targets=&targets-hint=Tips%20for%20modding%20FX&default-sum=100&button-text=13&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=4100117541059887)
+  
+  It has least comission for me to take money out, but it does not work for everyone.
+  
+  As alternative, use Ko-Fi.
+  
+  [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T792BE6)
+  
+  Any tips there do a round-trip across the world, though.
 </details>
 
 # What are those small patch cables?
