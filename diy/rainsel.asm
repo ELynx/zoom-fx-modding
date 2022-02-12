@@ -3,10 +3,10 @@ Fx_FLT_RainSel:
 ; A4 stores first argument to function, it seems here it holds a structure
 ; load from structure using offsets
            LDW.D1T2      *A4[1],B4   ; "parameters" are loaded as offset from this address
+           LDW.D1T1      *A4[12],A7  ; some source that is always loaded from, with increment
            LDW.D1T1      *A4[11],A6  ; some destination that is always written to
            LDW.D1T1      *A4[5],A5   ; address of FxIn, see how it is loaded to understand
            LDW.D1T1      *A4[4],A8   ; address of GuitarIn, see how it is loaded to undestand
-           LDW.D1T1      *A4[12],A7  ; some source that is always loaded from, with increment
 
 ; using B4, load:
            LDW.D2T2      *B4[4],B9   ; probably knob level multiplier so that 100 on knob means 1.0 as float
