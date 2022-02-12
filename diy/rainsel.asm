@@ -30,9 +30,9 @@ Fx_FLT_RainSel:
 ; order is left, right
 $C$L1:
 ; instead of nop 3 for MPYSP
-           LDW.D1T1      *A7[0],A9   ; this will be read 0,1,2 ... 7
+           LDW.D1T1      *A7[0],A4   ; this will be read 0,1,2 ... 7
            NOP           4
-           STW.D1T1      A9,*A6[0]   ; but always written to 0; this step is logic from inspiration
+           STW.D1T1      A4,*A6[0]   ; but always written to 0; this step is logic from inspiration
 
 ; for this iteration, calculate fx and dry coefficients, and put them to register A for fast access
            MPYSP.M2      B5,B7,B9 ; (fx level x fx state)
@@ -62,9 +62,9 @@ $C$L1:
 ; structure in inspiration is clearly a result of loop unroll
 ; but rolling it back required using registers as offset for other registers
 ; and that is way too complex for this excersise
-           LDW.D1T1      *A7[1],A9
+           LDW.D1T1      *A7[1],A4
            NOP           4
-           STW.D1T1      A9,*A6[0]
+           STW.D1T1      A4,*A6[0]
 
            LDW.D1T1      *A5[1],A3
            LDW.D1T1      *A8[1],A4
@@ -78,9 +78,9 @@ $C$L1:
            STW.D1T1      A3,*A5[1]
 
 
-           LDW.D1T1      *A7[2],A9
+           LDW.D1T1      *A7[2],A4
            NOP           4
-           STW.D1T1      A9,*A6[0]
+           STW.D1T1      A4,*A6[0]
 
            LDW.D1T1      *A5[2],A3
            LDW.D1T1      *A8[2],A4
@@ -94,9 +94,9 @@ $C$L1:
            STW.D1T1      A3,*A5[2]
 
 
-           LDW.D1T1      *A7[3],A9
+           LDW.D1T1      *A7[3],A4
            NOP           4
-           STW.D1T1      A9,*A6[0]
+           STW.D1T1      A4,*A6[0]
 
            LDW.D1T1      *A5[3],A3
            LDW.D1T1      *A8[3],A4
@@ -110,12 +110,12 @@ $C$L1:
            STW.D1T1      A3,*A5[3]
 
 
-           LDW.D1T1      *A7[4],A9
+           LDW.D1T1      *A7[4],A4
            NOP           4
-           STW.D1T1      A9,*A6[0]
+           STW.D1T1      A4,*A6[0]
 
            LDW.D1T1      *A5[4],A3
-           LDW.D1T1      *A8[4],A9
+           LDW.D1T1      *A8[4],A4
            NOP           3
            MPYSP.M1      A3,A24,A3
            NOP           3
@@ -126,9 +126,9 @@ $C$L1:
            STW.D1T1      A3,*A5[4]
 
 
-           LDW.D1T1      *A7[5],A9
+           LDW.D1T1      *A7[5],A4
            NOP           4
-           STW.D1T1      A9,*A6[0]
+           STW.D1T1      A4,*A6[0]
 
            LDW.D1T1      *A5[5],A3
            LDW.D1T1      *A8[5],A4
@@ -142,9 +142,9 @@ $C$L1:
            STW.D1T1      A3,*A5[5]
 
 
-           LDW.D1T1      *A7[6],A9
+           LDW.D1T1      *A7[6],A4
            NOP           4
-           STW.D1T1      A9,*A6[0]
+           STW.D1T1      A4,*A6[0]
 
            LDW.D1T1      *A5[6],A3
            LDW.D1T1      *A8[6],A4
@@ -158,9 +158,9 @@ $C$L1:
            STW.D1T1      A3,*A5[6]
 
 
-           LDW.D1T1      *A7[7],A9
+           LDW.D1T1      *A7[7],A4
            NOP 4
-           STW.D1T1      A9,*A6[0]
+           STW.D1T1      A4,*A6[0]
 
            LDW.D1T1      *A5[7],A3
            LDW.D1T1      *A8[7],A4
