@@ -4,4 +4,6 @@
 
 [Source code for business logic part of RainSel](rainsel.asm)
 
+[WIP: Source code for business logic part of RTFM](rtfm.asm)
+
 [Some regex I found useful, because I never automated the process](regex.txt)
