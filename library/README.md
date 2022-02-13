@@ -11,6 +11,10 @@ My thoughts and findings on LineSel, one of effects that was easiest to understa
 
 This is where you follow after Chapter 1 if you want to make any effect yourself.
 
+[Chapter 3 - how to compile your FX](CH_3.md).
+
+I totally forgot this when writing Chapter 2, oops. Follow there if you have an asm you want to compile and put to unit
+
 # General downloads and tools
 To get the flow started, you will need:
 * A hex editor of your choice. I used [wxMEdit](https://wxmedit.github.io/).
