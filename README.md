@@ -13,7 +13,7 @@ Media:
   This video has compression of around 4 out of 9 [f***g jackals](http://seo-revizor.ru/grandmotors-inzhiniringovye-ebanisticheskie-resheniya/). Meh. Works for me, I am not a video artist.
 </details>
 
-## RTFM
+# RTFM
 Media:
 <details>
   
@@ -75,5 +75,5 @@ That said, do not try this night before the gig. Just keep the unit in the board
 ## On full .asm files, if that was not clear
 Do not ask for “full source code” or “full assembly” for FX. That is not mine to publish or reproduce. Situation here is exactly the situation with RomHacks for cartridge games: I have the hardware -> I modify the original -> I post difference -> You apply it onto original you should legally have. This is why I chose IPS format, because I feel this is more RomHack that anything.
 
-# Where do I start if I want to do something similar?
+## Where do I start if I want to do something similar?
 Glad you asked, visit [library](library/README.md) for text descriptions and useful links, and [DYI section](diy/README.md) for hands-on materials such as scripts and so on.
