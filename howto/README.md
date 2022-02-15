@@ -3,7 +3,7 @@ You are about to create and flash a customized firmware to your trusty FX unit.
 
 For this to succeed, first read instructions through, make sure you have all the materials and time to complete these steps.
 
-N.B.: at this moment, I don't know how to add new FX to the unit. RainSel will replace LineSel on FX unit, until you flash firmware with original FX back.
+N.B.: at this moment, I don't know how to add new FX to the unit. New effects will replace originals on FX unit, until you flash firmware with original FX back.
 
 I recommend using laptop or desktop with UPS, and have good and charged battery.
 
@@ -20,7 +20,7 @@ Unpack the archive to location where you can access and modify all the files. Re
 
 Download [Lunar IPS](http://fusoya.eludevisibility.org/lips/index.html). This is the tool that brings my difference to your legally obtained FX file. I used version 1.02, but when I checked the web page version 1.03 released recently. I am sure that either will work.
 
-Download RAINSEL.ips from [Releases](https://github.com/ELynx/zoom-fx-modding/releases) page.
+Download .ips for effect you want from [Releases](https://github.com/ELynx/zoom-fx-modding/releases) page.
 
 # Section 2 - make customized firmware
 ## Make a backup of LINESEL.ZDL
@@ -38,7 +38,7 @@ If you are doing this not for the first time, remember to replace file in `Z:\FO
 
 * Run Lunar IPS
 * Choose `Apply IPS Patch`
-* Choose the downloaded RAINSEL.ips
+* Choose the downloaded .ips file
 * When prompted to choose file to patch
   * Change filter from `Most Common ROM Files` to `All Files (*.*)`
   * Choose `Z:\FOO\files\effects\LINESEL.ZDL`
@@ -73,19 +73,11 @@ Congratulations, you are done! (Or my condolences, if this somehow failed.)
 
 # Section 4 - use the effect
 
-RainSel had replaced all of instances of LineSel, if you had any. It may be a good time to visit saved patches and see if they still do what you expect.
+Modded FX had replaced all of instances of LineSel, if you had any. It may be a good time to visit saved patches and see if they still do what you expect.
 
-RailSel was not meant to be used as on/off effect (however who am I to tell you what to do), rather as support brick at the end of your chain.
+[RailSel](RainSel.md)
 
-In "BOTH MIX" position, processed and original input signals are both sent to next FX (or output).
-
-In "L/R" position, left channel outputs processed signal, and right channel is replaced with original signal (for me this is same input, I have no FX unit with stereo input).
-
-Knobs control levels of processed (WET) and original (DRY) signals.
-
-In "L/R" position, right channel of previously stereo FX output is in general lost. Overall, built-in effects have strange relations to stereo / mono processing, but that is how whole FX was made, this particular mod just makes this little bit more noticeable.
-
-One hint I discovered within 5 minutes of messing with modded FX: original signal means original noise. My test source had high background hum which I cancelled with `ZNR` at the start of the chain. After modding, I moved it right after the RainSel, and it seems to handle modded output just fine. Try different positions of "Effect In / Guitar In" toggle on `ZNR` to see that works better for your chain.
+[RTFM](RTFM.md)
 
 # Section 5 - restoring original effects
 

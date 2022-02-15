@@ -71,3 +71,8 @@ _N.B. for executable section, padding with zeros until end of section is very im
 If your opcode block is longer than original, time to optimize.
 
 Viola! After some very convoluted steps, you have FX with custom executable part.
+
+## Extra step for ips release
+I use LunarIPS for making patch releases. Use original ZDL file as source, and modified as modified, not that hard to guess.
+
+Remember, content of full ZDL belongs to Zoom Co, do not post it directly. Post only parts that you made, and ips is a tool for that.

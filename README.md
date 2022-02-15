@@ -2,18 +2,27 @@
 Media:
 <details>
   
-  <img src="https://github.com/ELynx/zoom-fx-modding/blob/69b56051f80618196cc8268f63214dac29746bba/media/photo.jpg" width=25% height=25%>
+  <img src="media/rainsel_photo.jpg" width=25% height=25%>
   
   I uploaded a video demo where you can hear L/R channels and corresponding knob positions.
   
   I recommend using headphones to tell left and right channels apart. Be careful with volume, sound does not start right out, and _beep_ I used may be startling.
   
-  [Video demo](media/demo.mp4)
+  [Video demo](media/rainsel_demo.mp4)
   
   This video has compression of around 4 out of 9 [f***g jackals](http://seo-revizor.ru/grandmotors-inzhiniringovye-ebanisticheskie-resheniya/). Meh. Works for me, I am not a video artist.
 </details>
 
-# I want to try out the FX, what do I do
+## RTFM
+Media:
+<details>
+  
+  <img src="media/rtfm_photo.jpg" width=25% height=25%>
+  
+  No on-effect video, I don't own MS-70CDR now so I cannot record it.  
+</details>
+
+# I want to try out one of the FX, what do I do
 Follow instructions in [here](howto/README.md).
 
 # I want to tip you some $
