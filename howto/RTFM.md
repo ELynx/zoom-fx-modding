@@ -40,13 +40,13 @@ Effects I tested __on MS-60B__:
 ### After RTFM
 Effects I tested __on MS-60B__:
 
-* ZNR - Works, with some tweaks is good with mono in. On stereo effects I don't think it gates channels independently, so YMMW.
+* ZNR - Works, with some tweaks is good with mono in. With stereo in I don't think it gates channels independently, so YMMW.
 * VinFLNGR - Works, but leaks signal across channels. Meh.
 * StereoDly - Works, and I think respects two chain processing with mono in.
 * DriveEcho - Works when "Stereo" is on. Nice sound.
 
 ## Closing words
-This mod works with all the limitations original effects have regarding to stereo processing, and then some. I think Zoom Co already did great work with stereo effects, and this is mostly pushing to the limits.
+This mod works with all the limitations original effects have regarding to stereo processing, and then some. I think Zoom Co already did great work with stereo effects, and this mod is mostly pushing multistomp to the limits.
 
 That said, experiment. This has a limited working effect combination, but for OD on one channel and some echo on other, it should get the job done.
 
