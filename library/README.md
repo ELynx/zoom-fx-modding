@@ -13,7 +13,9 @@ This is where you follow after Chapter 1 if you want to make any effect yourself
 
 [Chapter 3 - how to compile your FX](CH_3.md).
 
-I totally forgot this when writing Chapter 2, oops. Follow there if you have an asm you want to compile and put to unit
+I totally forgot this when writing Chapter 2, oops. Follow there if you have an asm you want to compile and put to unit.
+
+This is logical conclusion for making your first effect.
 
 # General downloads and tools
 To get the flow started, you will need:

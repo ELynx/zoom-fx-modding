@@ -4,6 +4,8 @@
 
 [Source code for business logic part of RainSel](rainsel.asm)
 
-[WIP: Source code for business logic part of RTFM](rtfm.asm)
+[Source code for business logic part of RTFM](rtfm.asm)
 
 [Some regex I found useful, because I never automated the process](regex.txt)
+
+[Amazing QR Code generator that I use](https://github.com/nayuki/QR-Code-generator)
