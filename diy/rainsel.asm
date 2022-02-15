@@ -17,7 +17,7 @@ Fx_FLT_RainSel:
 ; while these are loading, busy with housekeeping
            LDW.D1T1      *A6[0],A6   ; prepare sink address, this logic is from inspiration
  ||        MVK.L2        0,B7        ; set B7 to 1.0 step 1
-           SUBAW.D1      A5,0x8,A5   ; prepare read "FxIn" offset, this logic is from inspiration
+           SUBAW.D1      A5,0x8,A5   ; decrement initial address, since loop always start with increment
  ||        SET.S2        B7,23,29,B7 ; set B7 to 1.0 step 2
  ||        MVK.L2        2,B0        ; prepare loop count
 
@@ -43,7 +43,7 @@ $C$L1:
            NOP           3
            MV.L1X        B9,A26
 
-           LDW.D1T1      *++A5[8],A3 ; this step is logic from inspiration, read FxIn
+           LDW.D1T1      *++A5[8],A3 ; increment buffer address, read FxIn
  ||        MV.L2         B7,B9       ; parallel three glasses swap fx and dry states: fx -> storage
            LDW.D1T1      *A8[0],A4   ; read GuitarIn
  ||        MV.L2         B8,B7       ; dry -> fx
