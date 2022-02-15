@@ -43,7 +43,7 @@ Why thank you! See expandable section for more.
   
   Russian tipping provider is ЮMoney
   
-  [![yoomoney](https://yoomoney.ru/i/shop/iomoney_icon_white_examle.png)](https://yoomoney.ru/quickpay/shop-widget?writer=buyer&targets=&targets-hint=Tips%20for%20modding%20FX&default-sum=100&button-text=13&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=4100117541059887)
+  [![yoomoney](media/iomoney.svg)](https://yoomoney.ru/quickpay/shop-widget?writer=buyer&targets=&targets-hint=Tips%20for%20modding%20FX&default-sum=100&button-text=13&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=4100117541059887)
   
   It has least commission for me to take money out, but it does not work for everyone.
   
