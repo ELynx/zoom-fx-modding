@@ -14,5 +14,8 @@ TODO
 ## Tested effects
 TODO
 
-## Tips and tricks
+## Overall advice
 TODO
+
+## Tips
+If you found this useful, you can leave me some tips, instructions are [here](../README.md#i-want-to-tip-you-some-).
