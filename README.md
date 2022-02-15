@@ -2,7 +2,7 @@
 Media:
 <details>
   
-  <img src="media/rainsel_photo.jpg" width=25% height=25%>
+  <img src="media/rainsel_photo.jpg" width=50% height=50%>
   
   I uploaded a video demo where you can hear L/R channels and corresponding knob positions.
   
@@ -17,7 +17,7 @@ Media:
 Media:
 <details>
   
-  <img src="media/rtfm_photo.jpg" width=25% height=25%>
+  <img src="media/rtfm_photo.jpg" width=50% height=50%>
   
   No on-effect video, I don't own MS-70CDR now so I cannot record it.  
 </details>
