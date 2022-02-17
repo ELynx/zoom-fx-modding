@@ -1,6 +1,6 @@
 ---
 name: I have an effect idea
-about: I have an effect idea I want to suggest, in english
+about: I have an effect idea I want to suggest, in English
 title: ''
 labels: enhancement
 assignees: ''
