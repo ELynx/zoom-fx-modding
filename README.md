@@ -83,3 +83,6 @@ Do not ask for “full source code” or “full assembly” for FX. That is not
 
 ## Where do I start if I want to do something similar?
 Glad you asked, visit [library](library/README.md) for text descriptions and useful links, and [DYI section](diy/README.md) for hands-on materials such as scripts and so on.
+
+## Dibs
+I call dibs on sorting index `0xF1` (decimal `241`) across all effect types. I will use sub-indexes if I have more than one effect in category.

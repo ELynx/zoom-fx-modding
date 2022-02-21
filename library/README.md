@@ -15,6 +15,12 @@ This is where you follow after Chapter 1 if you want to make any effect yourself
 
 I totally forgot this when writing Chapter 2, oops. Follow there if you have an asm you want to compile and put to unit.
 
+[Chapter 4 - ZDL header format](CH_4.md).
+
+After some analysis, I managed to make custom FX to be added to unit, not replacing original. In Chapter 4 I put my header table findings.
+
+After you have ZDL file made and running, time to make it separate item from original.
+
 This is logical conclusion for making your first effect.
 
 # General downloads and tools

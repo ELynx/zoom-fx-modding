@@ -3,13 +3,11 @@ You are about to create and flash a customized firmware to your trusty FX unit.
 
 For this to succeed, first read instructions through, make sure you have all the materials and time to complete these steps.
 
-N.B.: at this moment, I don't know how to add new FX to the unit. New effects will replace originals on FX unit, until you flash firmware with original FX back.
-
 I recommend using laptop or desktop with UPS, and have good and charged battery.
 
 I recommend using USB cable in good condition, with reliable connection.
 
-If you ever want to repeat this process with new release or mod, make sure you start with backed up original FX file, not modified version. I have backup step listed in instructions.
+If you ever want to repeat this process with new release or mod, make sure you start with original FX file, not modified version.
 
 Notice: I had never lost FX settings while doing this, but I don't actually change firmware version, just mess around within one. Make a backup of all FX settings you may miss. There is software for it, or just take some pictures.
 
@@ -22,36 +20,56 @@ Download [Lunar IPS](http://fusoya.eludevisibility.org/lips/index.html). This is
 
 Download .ips for effect you want from [Releases](https://github.com/ELynx/zoom-fx-modding/releases) page.
 
+Have notepad software ready. Built-in notepad should work.
+
 # Section 2 - make customized firmware
-## Make a backup of LINESEL.ZDL
-Lunar IPS modifies files in-place, make a backup first time you do this.
+## Make copy / copies of LINESEL.ZDL for modification
+Do this step for each .ips file you want to use.
+
+Lunar IPS modifies files in-place, make a source file for it. Remember to always start from unmodified LINESEL.ZDL, not version that was already patched.
 
 * Start from `Z:\FOO`
 * Navigate to `Z:\FOO\files\effects`
 * Find `LINESEL.ZDL`
-* Make a copy of it, to folder outside of `effects`.
+* Make a copy of it, and name it appropriately:
+  * RainSel - `RAINSEL.ZDL`
+  * RTFM - `RTFM.ZDL`
 
-If you ever lose this backup, don't panic. You can restore LineSel on FX unit by just flashing official firmware. Backing it up is a convenience only.
-
-## Modify LINESEL.ZDL
-If you are doing this not for the first time, remember to replace file in `Z:\FOO\files\effects` with a backup.
+## Modify copied ZDL
+Do this step for each .ips file you want to use. For `FOO.ips` I assume prepared copy of `FOO.ZDL` from step above.
 
 * Run Lunar IPS
 * Choose `Apply IPS Patch`
 * Choose the downloaded .ips file
 * When prompted to choose file to patch
   * Change filter from `Most Common ROM Files` to `All Files (*.*)`
-  * Choose `Z:\FOO\files\effects\LINESEL.ZDL`
+  * Choose `Z:\FOO\files\effects\FOO.ZDL`
 * Tool will report with `Patching Complete!`. Click OK to close it.
 
-If you want, you can also backup patched file, in case you need to swap between original and modded and don't want to apply IPS again.
+## Modify known FX list
+Version 1.1.1 of Zoom Effect Manager was not designed with custom FX in mind, and have prepared list of effects. This step will append that list to make new FX selectable.
+
+* Navigate to `Z:\FOO\files`
+* Open effects_settings.csv with Notepad
+* Scroll to the bottom. Disable line wrap if that makes it easier to orient
+* Add following lines at the bottom:
+
+RainSel
+
+`XXX;RailSel;RAINSEL.ZDL;;MS-50G;MS-60B;MS-70CDR;G1on;B1on;Rain Sel EN;Rain Sel RU;FLTR;0x02;1.01`
+
+RTFM
+
+`XXX;RTFM;RTFM.ZDL;;MS-50G;MS-60B;MS-70CDR;G1on;B1on;R.T.F.M. EN;R.T.F.M. RU;FLTR;0x02;1.00`
+
+* Replace XXX with appropriate number(s) to continue indexing. For me these were 235 and 236 for both FX.
 
 # Section 3 - prepare and flash custom firmware
 Firmware is created with Zoom Firmware Manager. Launch it's executable from `Z:\FOO` folder, and follow the instructions for it.
 
 In simple terms, select your FX unit type, select effects you would like.
 
-Make sure LINESEL.ZDL is included, this is the modded FX now.
+Make sure modded FX you want are included.
 
 Warning: steps below are steps to actually flash a firmware to your unit. Observe all manufacturer's recommendations for firmware update, all instructions from Zoom Effect Manager. Make sure to not to break USB connection, lose power, etc. Process takes about 5 minutes to complete. Have some patience and refrain from (un)plugging MIDI and USB devices. In my experience, these are the only steps you have to be actively careful about.
 
@@ -73,14 +91,10 @@ Congratulations, you are done! (Or my condolences, if this somehow failed.)
 
 # Section 4 - use the effect
 
-Modded FX had replaced all of instances of LineSel, if you had any. It may be a good time to visit saved patches and see if they still do what you expect.
-
 [RailSel](RainSel.md)
 
 [RTFM](RTFM.md)
 
-# Section 5 - restoring original effects
+# Section 5 - restoring original firmware
 
 If you want to roll back the changes, download original firmware update from official Zoom Co web site, and do the flashing steps again.
-
-If you want to just restore LineSel, but keep using Zoom Effect Manager, replace modified file with backup.
