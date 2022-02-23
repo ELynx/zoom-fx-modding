@@ -17,7 +17,7 @@ Allows to mix dry and wet signals, or output them independently on L and R. Read
 
 Follow instructions in [here](howto/README.en.md).
 
-# Хочу поддержать материально / I want to support you with money
+# Хочу поддержать материально
 Спасибо! О том, как это можно сделать, читай в развороте.
 
 <details>
@@ -45,6 +45,8 @@ Follow instructions in [here](howto/README.en.md).
   
   Международная, но там денежка отправляется в кругосветку и по грабительскому курсу.
 </details>
+
+# I want to support you with money
 
 Why thank you! See expandable section for more.
 
