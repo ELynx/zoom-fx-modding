@@ -1,3 +1,3 @@
-[:ru: На русском](RTFM.ru.md)
+[⚪🔵🔴 На русском](RTFM.ru.md)
 
-[🌐 International](RTFM.en.md)
+[🌐🌐🌐 International](RTFM.en.md)

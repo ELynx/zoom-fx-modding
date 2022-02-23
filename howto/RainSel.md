@@ -1,3 +1,3 @@
-[:ru: На русском](RainSel.ru.md)
+[⚪🔵🔴 На русском](RainSel.ru.md)
 
-[🌐 International](RainSel.en.md)
+[🌐🌐🌐 International](RainSel.en.md)
