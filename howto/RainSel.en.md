@@ -1,4 +1,7 @@
 # RainSel
+
+[Video demo](../media/rainsel_demo.mp4)
+
 RailSel was not meant to be used as on/off effect (however who am I to tell you what to do), rather as support brick at the end of your chain.
 
 In "BOTH MIX" position, processed and original input signals are both sent to next FX (or output).
