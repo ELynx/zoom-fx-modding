@@ -1,54 +1,54 @@
 # RTFM
-## About this document
-This is a page with instructions for RTFM v1.0.0
+## Об этом документе
+Это страница с инструкциями к RTFM v1.0.0
 
-Be sure that you are reading correct version.
+Убедись что версии в эффекте и в документе совпадают.
 
-If you followed the QR code, you should be set, since each release comes with relevant URL embedded.
+Если ты отсканировал(а) QR код, то все тип-топ, в каждый релиз вшита соответствующая ссылка.
 
-If you opened this page manually, and version is different, look for tag that matches your version. Corresponding picker is usually to the top left of document view. It usually says something like `main` by default. When clicked, it will provide options `Branches` and `Tags`. Choose `Tags` and choose tag that starts with RTFM and the gives your version.
+Если ты открыл(а) эту страницу вручную, и версии не совпадают, нужно найти tag который подходит к твоей версии. Нужная менюшка обычно находится сверху слева от документа. По умолчанию там написано что-то типа `main`. Если на нее нажать, появятся варианты `Branches` и `Tags`. Выбираешь `Tags`, выбираешь из RTFM нужную версию.
 
-## Inputs and outputs
-This mod is intended to be used most with MS-70CDR to allow parallel processing of two signals on same unit. As such, it makes use of both L and R on inputs and outputs.
+## Входы и выходы
+В основном мод был задуман для работы с MS-70CDR, чтобы можно было обрабатывать два независимых сигнала. Так что используются оба входа и оба выхода.
 
-This _can_ run on MS-50G (I expect it to) and MS-60B (I tested it to), but will lack versatility. On my MS-60B it works in "Off" position, and routes single input signal to two sets of effects, then to different outputs.
+_Должно_ работать на MS-50G (я так думаю), _работает_ на MS-60B (я проверял), но, конечно, не так эффектно. На моем MS-60B работает в положении "Off" и обрабатывает один единственный вход отдельно в двух наборах эффектов.
 
-Knobs allow for adjusting gain of Left and Right channel volumes, plus you can use volume knobs inside individual effects as well.
+Крутилки позволяют настаивать громкость правого и левого каналов, и никто не запрещает использовать громкость в самих эффектах.
 
-## Capabilities and how to make FX chains
-TL;DR: most effects will work before, _only stereo_ effects will work after well. Only stereo _with independent channels_ will work superb.
+## Что может, как использовать
+TL;DR: большинство эффектов можно ставить до, _только стерео_ эффекты работают адекватно после. Только стереоэффекты _с независимыми каналами_ работаю зашибись.
 
-This effect does not do any _magic_ to signal processing, so results are not _magical_.
+Этот мод не _волшебный_, и результаты у него соответственно не _волшебные_. Второй вход не появится, моноэффект в стерео не превратит.
 
-All effects before RTFM process signal as usual. This means that most of stock effects I [tested on MS-60B](#before-rtfm) worked without problem, even if results are not superb.
+Все эффекты до RTFM работают как обычно. Это значит что большинство родных эффектов которые я [тестировал на MS-60B](#до-rtfm) работали без проблем, даже если конечный результат не всегда был хорош.
 
-Result of "before" effects is then processed by RTFM.
+Результат обработки "до" поступает как вход в RTFM.
 
-For one channel, effects are "silenced", and routed directly to same side Output. This achieves "chain one" logic.
+На одном канале, сигнал "глушится" и выдается сразу на соответствующий выход. Таким образом получается "цепь один".
 
-For another channel, processed signal is replaced with original signal that was preserved. So, any FX is "forgotten" and "chain two" logic starts.
+На другом канале обработанный сигнал заменяется на чистый, который мультистомп (более-менее бережно) сохранил. Этот "восстановленный" сигнал передается на последующие эффекты, и получается "цепь два".
 
-So, all effects after RTFM _have to support stereo_ for correct processing. Most of stock effects I [tested on MS-60B](#after-rtfm) make various degrees of mess. Pick ones that support independent stereo processing, and turn that processing on.
+Поэтому все эффекты после RTFM _должны поддерживать стерео_ для правильной работы. Большинство родных эффектов, которые я [тестировал на MS-60B](#после-rtfm) так или иначе _не_ справляются. Поэтому нужно выбирать эффекты, которые работают в стерео, и включать это самое стерео в настройках эффекта.
 
-## Tested effects
-### Before RTFM
-Effects I tested __on MS-60B__:
+## Проверенные эффекты
+### До RTFM
+Проверялось на __MS-60B__:
 
-* ZNR - Works but does not do much because noise returns for chain two.
-* BaFzSmile - Works, staple of my test sound.
+* ZNR - Работает, но не особо полезен так как весь шум вернется для второй цепи.
+* BaFzSmile - Работает, основа моего тестового звука.
 
-### After RTFM
-Effects I tested __on MS-60B__:
+### После RTFM
+Проверялось на __MS-60B__:
 
-* ZNR - Works, with some tweaks is good with mono in. With stereo in I don't think it gates channels independently, so YMMW.
-* VinFLNGR - Works, but leaks signal across channels. Meh.
-* StereoDly - Works, and I think respects two chain processing with mono in.
-* DriveEcho - Works when "Stereo" is on. Nice sound.
+* ZNR - Работает, если покрутить настройки, то выходит хорошо для моно входа. Не думаю, что заработает со стерео как надо, так как открывает гейт по превышению порога на любом канале, а не по отдельности. Но мало ли так и нужно, каждому свое.
+* VinFLNGR - Работает, но подмешивает хвосты между каналами. Ну такое.
+* StereoDly - Работает, и, судя по всему, поддерживает раздельную обработку каналов.
+* DriveEcho - Работает когда включен режим "Стерео" внутри. Нормальный такой звук, кстати.
 
-## Closing words
-This mod works with all the limitations original effects have regarding to stereo processing, and then some. I think Zoom Co already did great work with stereo effects, and this mod is mostly pushing multistomp to the limits.
+## В добрый путь
+Этот мод работает в рамках всех ограничений, с которыми сталкиваются родные эффекты по части стерео обработки, и еще немного сверху. На мой взгляд, Зумовцы и так много сделали для создания стерео эффектов, а этот мод дожимает мультистомп по своего предела.
 
-That said, experiment. This has a limited working effect combination, but for OD on one channel and some echo on other, it should get the job done.
+Так что экспериментируй. Тут не так много рабочих комбинаций, но, чтобы повесить перегруз на один канал и это на другой хватить должно.
 
-## Tips
-If you found this useful, you can leave me some tips, instructions are [here](../README.md#i-want-to-tip-you-some-).
+## Поддержать материально
+Если эффект пригодился, можно оставить чаевые, как это сделать написано [здесь](../README.md#хочу-поддержать-материально).
