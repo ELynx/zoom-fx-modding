@@ -6,9 +6,9 @@ Allows to use different effects for L and R, especially good for CDR. Read more 
 <img src="media/rtfm_photo.jpg" width=25% height=25%>
 
 # RainSel
-Позволяет смешивать чистый и обработанный сигналы, или выводить их по отдельности на L и R. Подробности [тут](howto/RailSel.ru.md).
+Позволяет смешивать чистый и обработанный сигналы, или выводить их по отдельности на L и R. Подробности [тут](howto/RainSel.ru.md).
 
-Allows to mix dry and wet signals, or output them independently on L and R. Read more [here](howto/RailSel.en.md).
+Allows to mix dry and wet signals, or output them independently on L and R. Read more [here](howto/RainSel.en.md).
 
 <img src="media/rainsel_photo.jpg" width=25% height=25%>
 
