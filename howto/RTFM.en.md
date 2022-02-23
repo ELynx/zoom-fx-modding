@@ -51,4 +51,4 @@ This mod works with all the limitations original effects have regarding to stere
 That said, experiment. This has a limited working effect combination, but for OD on one channel and some echo on other, it should get the job done.
 
 ## Tips
-If you found this useful, you can leave me some tips, instructions are [here](../README.md#i-want-to-tip-you-some-).
+If you found this useful, you can leave me some tips, instructions are [here](../README.md#i-want-to-support-you-with-money).
