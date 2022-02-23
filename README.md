@@ -1,34 +1,54 @@
-# RainSel 
-Media:
+# RTFM 🔥
+Позволяет использовать разные эффекты для L и R, особенно интересен для CDR. Плюсы, минусы и подводные камни [тут](howto/RTFM.ru.md).
+
+Allows to use different effects for L and R, especially good for CDR. Read more [here](howto/RTFM.en.md).
+
+<img src="media/rtfm_photo.jpg" width=25% height=25%>
+
+# RainSel
+Позволяет смешивать чистый и обработанный сигналы, или выводить их по отдельности на L и R. Подробности [тут](howto/RailSel.ru.md).
+
+Allows to mix dry and wet signals, or output them independently on L and R. Read more [here](howto/RailSel.en.md).
+
+<img src="media/rainsel_photo.jpg" width=25% height=25%>
+
+# Я хочу использовать эффект, что делать / I want to use one of the FX, what do I do
+Следуй инструкции [здесь](howto/README.ru.md).
+
+Follow instructions in [here](howto/README.en.md).
+
+# Хочу поддержать материально / I want to support you with money
+Спасибо! О том, как это можно сделать, читай в развороте.
+
 <details>
+  Я бы хотел использовать фичу Гитхаба "Спонсировать", но в России она "пока" недоступна. Если заработает, то перейду на нее.
   
-  <img src="media/rainsel_photo.jpg" width=50% height=50%>
+  Прочитай, пожалуйста, что для меня значит "поддержать":
   
-  I uploaded a video demo where you can hear L/R channels and corresponding knob positions.
+  Во-первых, мне не нужны последние деньги. На дворе, как всегда, трудные времена, и лучше позаботиться о себе, а только потом раздавать деньги незнакомцам в интернетах. Я делаю этот проект для себя, по фану, и чтобы показать сообществу что это в принципе возможно. Пользуйся просто так, на здоровье.
   
-  I recommend using headphones to tell left and right channels apart. Be careful with volume, sound does not start right out, and _beep_ I used may be startling.
+  Во-вторых, я не хочу регулярных донатов. Я не думаю, что буду заниматься этим проектом постоянно, по крайней мере пока что, так что давай без обязательств. Вместо этого проставься кружкой кофе, когда эти "секретные материалы" оказались полезными.
   
-  [Video demo](media/rainsel_demo.mp4)
+  Ну и в-третьих, "поддержать" не значит "нанять". Я не беру заказы, не учу и не обещаю сделать Х если я получу У. Есть вопросы - задавай, если могу я отвечу бесплатно. Есть идея? Предлагай. Хочешь что-то обсудить? Запросто. Дело будет не за деньгами. И я не буду делать список "спонсоров", "патронов", как угодно назови, пока у меня просто страничка с чаевыми. Если Гитхаб таки запустит "спонсорство", и это будет происходить само по себе - милое дело. А до тех пор - я лучше потрачу время на разработку.
+
+  Ставь класс если согласен:
   
-  This video has compression of around 4 out of 9 [f***g jackals](http://seo-revizor.ru/grandmotors-inzhiniringovye-ebanisticheskie-resheniya/). Meh. Works for me, I am not a video artist.
+  Самый простой способ это ЮMoney
+  
+  [![yoomoney](media/iomoney.svg)](https://yoomoney.ru/quickpay/shop-widget?writer=buyer&targets=&targets-hint=За%20моды%20для%20Зумов&default-sum=100&button-text=13&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=4100117541059887)
+  
+  Там самая маленькая комиссия, но "из-за границы" может не сработать.
+  
+  Есть альтернатива под названием Ko-Fi.
+  
+  [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T792BE6)
+  
+  Международная, но там денежка отправляется в кругосветку и по грабительскому курсу.
 </details>
 
-# RTFM
-Media:
-<details>
-  
-  <img src="media/rtfm_photo.jpg" width=50% height=50%>
-  
-  No on-effect video, I don't own MS-70CDR now so I cannot record it.  
-</details>
-
-# I want to try out one of the FX, what do I do
-Follow instructions in [here](howto/README.md).
-
-# I want to tip you some $
 Why thank you! See expandable section for more.
+
 <details>
-  
   I really wanted to use Github Sponsor option, but it is currently (ever?) not available in Russia. When it is available, I will migrate to it, if I ever have a need.
   
   Please read some items below, and proceed if you want.
@@ -54,12 +74,7 @@ Why thank you! See expandable section for more.
   Any tips there do a round-trip across the world, though.
 </details>
 
-# What are those small patch cables?
-They are original Russian development produced and sold by [LexCable](https://www.lexcable.ru/).
-
-If you are interested, give them a visit and support them with a purchase. They are small independent business that need every bit of funds.
-
-# Now to the full README
+# Now to the software development and official README
 ## First of all
 This is by no means supported or otherwise authorized by Zoom Corporation.
 
