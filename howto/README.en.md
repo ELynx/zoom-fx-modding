@@ -90,11 +90,9 @@ On FX unit, you will see a prompt to restart. Power cycle the unit.
 Congratulations, you are done! (Or my condolences, if this somehow failed.)
 
 # Section 4 - use the effect
+[RailSel](RainSel.en.md)
 
-[RailSel](RainSel.md)
-
-[RTFM](RTFM.md)
+[RTFM](RTFM.en.md)
 
 # Section 5 - restoring original firmware
-
 If you want to roll back the changes, download original firmware update from official Zoom Co web site, and do the flashing steps again.
