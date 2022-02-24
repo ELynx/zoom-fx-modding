@@ -1,58 +1,58 @@
-# Section 0 - before the storm
-You are about to create and flash a customized firmware to your trusty FX unit.
+# Раздел 0 - дабы вилохвоста приманить...
+Следуя данной инструкции, ты смастеришь своими руками модифицированную прошивку для мультистомпа.
 
-For this to succeed, first read instructions through, make sure you have all the materials and time to complete these steps.
+Чтобы все прошло хорошо, прочитай инструкцию целиком, приготовь все необходимое, и запасись временем.
 
-I recommend using laptop or desktop with UPS, and have good and charged battery.
+Я рекомендую использовать ИБП или ноутбук с хорошей и полностью заряженной батареей.
 
-I recommend using USB cable in good condition, with reliable connection.
+Я рекомендую использовать USB кабель в хорошем состоянии и с надежным подключением.
 
-If you ever want to repeat this process with new release or mod, make sure you start with original FX file, not modified version.
+Если модифицируешь эффект не в первый раз, всегда начинай с оригинального файла, а не с модифицированной версии.
 
-Notice: I had never lost FX settings while doing this, but I don't actually change firmware version, just mess around within one. Make a backup of all FX settings you may miss. There is software for it, or just take some pictures.
+Внимание: мне не доводилось терять патчи самому, но я всегда оставался в рамках одной версии прошивки. Сделай резервную копию настроек, чтобы потом не было обидно. Для этого есть программы, или можно просто их сфотографировать.
 
-# Section 1 - software
-Download [Zoom Effect Manager](https://vk.com/zoomeffectmanager). This is the tool to manage FXes on unit, and it is handy because it has all stock FXes prepared. I used version 1.1.1 at the time of writing this instructions.
+# Раздел 1 - программы
+Скачай [Zoom Effect Manager](https://vk.com/zoomeffectmanager). С помощью этой программы можно управлять списком эффектов, плюс в ней уже есть все файлы эффектов. На момент написания была актуальна версия 1.1.1.
 
-Unpack the archive to location where you can access and modify all the files. Remember this location, from here on I will refer to it as `Z:\FOO`.
+Распакуй архив туда, где можно будет запускать и изменять все файлы. Запомни путь до папки, я буду называть ее `Z:\FOO`.
 
-Download [Lunar IPS](http://fusoya.eludevisibility.org/lips/index.html). This is the tool that brings my difference to your legally obtained FX file. I used version 1.02, but when I checked the web page version 1.03 released recently. I am sure that either will work.
+Скачай [Lunar IPS](http://fusoya.eludevisibility.org/lips/index.html). С помощью этой программы мои изменения применяются к твоим _законно полученным_ эффектам. Я использовал версию 1.02, на сайте я видел уже и 1.03, но я думаю обе заработают. Русской версии я не видел, но там две с половиной кнопки, я в тебя верю.
 
-Download .ips for effect you want from [Releases](https://github.com/ELynx/zoom-fx-modding/releases) page.
+Скачай .ips для эффекта который ты хочешь в разделе [Releases](https://github.com/ELynx/zoom-fx-modding/releases).
 
-Have notepad software ready. Built-in notepad should work.
+Приготовь текстовый редактор. Встроенный "Блокнот" подойдет.
 
-# Section 2 - make customized firmware
-## Make copy / copies of LINESEL.ZDL for modification
-Do this step for each .ips file you want to use.
+# Раздел 2 - делаем прошивку
+## Копируем LINESEL.ZDL для изменений
+Повтори этот шаг для каждого .ips файла.
 
-Lunar IPS modifies files in-place, make a source file for it. Remember to always start from unmodified LINESEL.ZDL, not version that was already patched.
+Lunar IPS сразу меняет файлы, нужно приготовить исходные файлы. Начни с оригинального LINESEL.ZDL, а не с модифицированных до этого версий.
 
-* Start from `Z:\FOO`
-* Navigate to `Z:\FOO\files\effects`
-* Find `LINESEL.ZDL`
-* Make a copy of it, and name it appropriately:
+* Начни с `Z:\FOO`
+* Перейди в `Z:\FOO\files\effects`
+* Найди `LINESEL.ZDL`
+* Сделай копию, переименуй файл:
   * RainSel - `RAINSEL.ZDL`
   * RTFM - `RTFM.ZDL`
 
-## Modify copied ZDL
-Do this step for each .ips file you want to use. For `FOO.ips` I assume prepared copy of `FOO.ZDL` from step above.
+## Модифицируем копии ZDL
+Повтори этот шаг для каждого .ips файла. Для `FOO.ips` на предыдущем шаге был приготовлен файл `FOO.ZDL`.
 
-* Run Lunar IPS
-* Choose `Apply IPS Patch`
-* Choose the downloaded .ips file
-* When prompted to choose file to patch
-  * Change filter from `Most Common ROM Files` to `All Files (*.*)`
-  * Choose `Z:\FOO\files\effects\FOO.ZDL`
-* Tool will report with `Patching Complete!`. Click OK to close it.
+* Запусти Lunar IPS
+* Нажми `Apply IPS Patch`
+* Выбери .ips файл
+* Когда спросят о файле, который нужно менять
+  * Смени фильтр `Most Common ROM Files` на `All Files (*.*)`
+  * Выбери `Z:\FOO\files\effects\FOO.ZDL`
+* Программа скажет `Patching Complete!`. Нажми OK чтобы ее закрыть.
 
-## Modify known FX list
-Version 1.1.1 of Zoom Effect Manager was not designed with custom FX in mind, and have prepared list of effects. This step will append that list to make new FX selectable.
+## Модифицируем список эффектов
+Версия 1.1.1 Zoom Effect Manager не рассчитана на моды и новые эффекты. Нужно добавить новые эффекты в список, чтобы при создании прошивки их можно было выбрать.
 
-* Navigate to `Z:\FOO\files`
-* Open effects_settings.csv with Notepad
-* Scroll to the bottom. Disable line wrap if that makes it easier to orient
-* Add following lines at the bottom:
+* Перейди в `Z:\FOO\files`
+* Открой effects_settings.csv "Блокнотом"
+* Промотай в конец файла. Выключи перенос строк чтобы было проще ориентироваться
+* Добавь в конец файла:
 
 RainSel
 
@@ -62,39 +62,37 @@ RTFM
 
 `XXX;RTFM;RTFM.ZDL;;MS-50G;MS-60B;MS-70CDR;G1on;B1on;R.T.F.M. EN;R.T.F.M. RU;FLTR;0x02;1.00`
 
-* Replace XXX with appropriate number(s) to continue indexing. For me these were 235 and 236 for both FX.
+* Замени XXX подходящими числами, чтобы продолжить порядковый номер. У меня это были 235 и 236 когда я добавлял оба эффекта.
 
-# Section 3 - prepare and flash custom firmware
-Firmware is created with Zoom Firmware Manager. Launch it's executable from `Z:\FOO` folder, and follow the instructions for it.
+# Раздел 3 - готовим и прошиваем
+Прошивка создается с помощью Zoom Firmware Manager. Запускаем .exe из папки `Z:\FOO`, и далее по инструкции к программе.
 
-In simple terms, select your FX unit type, select effects you would like.
+Кратко, выбери тип своего устройства, выбери желаемые эффекты.
 
-Make sure modded FX you want are included.
+Убедись что модифицированные эффекты добавлены в список.
 
-Warning: steps below are steps to actually flash a firmware to your unit. Observe all manufacturer's recommendations for firmware update, all instructions from Zoom Effect Manager. Make sure to not to break USB connection, lose power, etc. Process takes about 5 minutes to complete. Have some patience and refrain from (un)plugging MIDI and USB devices. In my experience, these are the only steps you have to be actively careful about.
+Осторожно: дальше расписано как прошить свой мультистомп. Следуй всем рекомендациям по обновлению прошивки от производителя, всем инструкциям из Zoom Effect Manager. Не прерывай USB соединение, берегись отключения электричества и так далее. В целом процесс занимает минут 5. Наберись терпения и не теребонькай MIDI и USB устройства. По моему опыту, это единственный шаг когда нужно активно быть осторожным и аккуратным.
 
-Boot your FX unit in firmware update mode. Overall, look into the manual, but for MS-60B I have at hand this is done by pressing UP and DOWN, and then powering the unit with USB cable. Unit will skip usual animation and have special screen. Windows may discover new USB and MIDI devices, if process is done for the first time.
+Запусти мультистомп в режиме обновления прошивки. В целом - читай инструкцию, для MS-60B я нажимал кнопки ВВЕРХ и ВНИЗ, и затем подключал устройство по USB. Вместо родной заставки и привычного вида на эффекты, появится приглашение к прошивке. Обычно в первый раз Винда начинает находить новые USB и MIDI устройства.
 
-Go back to Zoom Effect Manager.
+Возвращайся в Zoom Effect Manager.
 
-In the lower left corner, click `Write Effects`.
+Нажимай `Записать эффекты`.
 
-Modified firmware update software will launch. This is the same software as for official firmware update, just loaded with customized list of effects.
+Запустится модифицированный прошивальщик. Это то же самое, что и родная программа для обновления прошивки, но в нее зашиты выбранные эффекты.
 
-Within firmware update software, follow on-screen instructions. This is the actual flashing part.
+В этой программе следуй инструкциям на экране. Собственно, это и есть процесс прошивки.
 
-Software on desktop will notify you that flashing is done, exit it.
+Программа скажет, что прошивка завершена, закрой ее.
 
-On FX unit, you will see a prompt to restart. Power cycle the unit.
+На мультистомпе так же будет написано, что обновление завершено, и будет предложено перезапустить эффект. Выключи и включи его чтобы запустить в обычном режиме.
 
-Congratulations, you are done! (Or my condolences, if this somehow failed.)
+Поздравляю, готово! (Или "мои соболезнования", если нет).
 
-# Section 4 - use the effect
+# Раздел 4 - об эффектах
+[RailSel](RainSel.ru.md)
 
-[RailSel](RainSel.md)
+[RTFM](RTFM.ru.md)
 
-[RTFM](RTFM.md)
-
-# Section 5 - restoring original firmware
-
-If you want to roll back the changes, download original firmware update from official Zoom Co web site, and do the flashing steps again.
+# Раздел 5 - восстанавливаем родную прошивку
+Если хочешь восстановить родную прошивку, скачай программу для обновления с официального сайта Зума, и повтори шаги по прошивке.
