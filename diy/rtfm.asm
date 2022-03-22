@@ -38,12 +38,11 @@ $C$L1:
            NOP           4
            STW.D1T1      A4,*A6[0]   ; but always written to 0; this step is logic from inspiration
 
-
 ; TODO investigation - why GuitarIn buffer is consumed twice? is this a bug in the original? increment needed?
            LDW.D1T1      *A8[0],A4   ; read GuitarIn
            LDW.D1T1      *++A5[8],A3 ; increment address, read FxIn
            ; housekeeping for each iteration
-           LDW.D1T2      *++A9[8],B9 ; increment address, value not used
+           LDW.D1T2      *++A9[8],B4 ; increment address, read Out
            ADD.L2        B0,-1,B0    ; decrement loop counter
            NOP
 
@@ -52,30 +51,35 @@ $C$L1:
            ; enablers
            MPYSP.M1X     A4,B7,A4    ; dry x disabled -LR-> 0 / dry
            NOP           3
-           STW.D1T1      A4,*A8[0]   ; 0 / dry -> next dry =LR=> 0 / dry
+           STW.D1T1      A4,*A8[0]   ; 0 / dry -> next dry -LR-> 0 / dry
 
            MPYSP.M1X     A3,B8,A3    ; prev.in x enabled -LR-> prev.in / 0
            NOP           3
            ; volume, B5 is used as volume, and starts with volume left; set to volume right at the end of unroll
-           MPYSP.M1X     A3,B5,A3    ; prev.in / 0 x volume-LR-> prev.in' / 0
+           MPYSP.M1X     A3,B5,A3    ; prev.in / 0 x volume -LR-> prev.in' / 0
            NOP           3
-           STW.D1T1      A3,*A9[0]   ; prev.in' / 0 -> output =LR=> prev.in' / 0
+           MPYSP.M2      B4,B7,B4    ; out x disabled -LR-> 0 / out
+           NOP           3
+           ADDSP.L1X     A3,B4,A3    ; prev.in' / 0 + 0 / out -LR-> prev.in' / out
+           NOP           3
+           STW.D1T1      A3,*A9[0]   ; prev.in' / out -> output -LR-> prev.in' / out
 
-           MPYSP.M2X     B5,A4,B9    ; 0 / dry x volume -LR-> 0 / dry'
+           MPYSP.M2X     B5,A4,B9    ; volume x 0 / dry -LR-> 0 / dry'
            NOP           4
-           STW.D1T2      B9,*A5[0]   ; 0 / dry' -> next fx =LR=> 0 / dry'
+           STW.D1T2      B9,*A5[0]   ; 0 / dry' -> next fx -LR-> 0 / dry'
 
 ; and now repeat above for index 1
 ; structure in inspiration is clearly a result of loop unroll
 ; but rolling it back required using registers as offset for other registers
 ; and that is way too complex for this excersise
+
            LDW.D1T1      *A7[1],A4
            NOP           4
            STW.D1T1      A4,*A6[0]
 
            LDW.D1T1      *A8[1],A4 ; read GuitarIn
            LDW.D1T1      *A5[1],A3 ; read FxIn
-           LDW.D1T2      *A9[1],B9 ; read Output, value not used
+           LDW.D1T2      *A9[1],B4 ; read Output
            NOP           2
            MPYSP.M1X     A4,B7,A4
            NOP           3
@@ -83,6 +87,10 @@ $C$L1:
            MPYSP.M1X     A3,B8,A3
            NOP           3
            MPYSP.M1X     A3,B5,A3
+           NOP           3
+           MPYSP.M2      B4,B7,B4
+           NOP           3
+           ADDSP.L1X     A3,B4,A3
            NOP           3
            STW.D1T1      A3,*A9[1]
            MPYSP.M2X     B5,A4,B9
@@ -96,7 +104,7 @@ $C$L1:
 
            LDW.D1T1      *A8[2],A4
            LDW.D1T1      *A5[2],A3
-           LDW.D1T2      *A9[2],B9
+           LDW.D1T2      *A9[2],B4
            NOP           2
            MPYSP.M1X     A4,B7,A4
            NOP           3
@@ -104,6 +112,10 @@ $C$L1:
            MPYSP.M1X     A3,B8,A3
            NOP           3
            MPYSP.M1X     A3,B5,A3
+           NOP           3
+           MPYSP.M2      B4,B7,B4
+           NOP           3
+           ADDSP.L1X     A3,B4,A3
            NOP           3
            STW.D1T1      A3,*A9[2]
            MPYSP.M2X     B5,A4,B9
@@ -117,7 +129,7 @@ $C$L1:
 
            LDW.D1T1      *A8[3],A4
            LDW.D1T1      *A5[3],A3
-           LDW.D1T2      *A9[3],B9
+           LDW.D1T2      *A9[3],B4
            NOP           2
            MPYSP.M1X     A4,B7,A4
            NOP           3
@@ -125,6 +137,10 @@ $C$L1:
            MPYSP.M1X     A3,B8,A3
            NOP           3
            MPYSP.M1X     A3,B5,A3
+           NOP           3
+           MPYSP.M2      B4,B7,B4
+           NOP           3
+           ADDSP.L1X     A3,B4,A3
            NOP           3
            STW.D1T1      A3,*A9[3]
            MPYSP.M2X     B5,A4,B9
@@ -138,7 +154,7 @@ $C$L1:
 
            LDW.D1T1      *A8[4],A4
            LDW.D1T1      *A5[4],A3
-           LDW.D1T2      *A9[4],B9
+           LDW.D1T2      *A9[4],B4
            NOP           2
            MPYSP.M1X     A4,B7,A4
            NOP           3
@@ -146,6 +162,10 @@ $C$L1:
            MPYSP.M1X     A3,B8,A3
            NOP           3
            MPYSP.M1X     A3,B5,A3
+           NOP           3
+           MPYSP.M2      B4,B7,B4
+           NOP           3
+           ADDSP.L1X     A3,B4,A3
            NOP           3
            STW.D1T1      A3,*A9[4]
            MPYSP.M2X     B5,A4,B9
@@ -159,7 +179,7 @@ $C$L1:
 
            LDW.D1T1      *A8[5],A4
            LDW.D1T1      *A5[5],A3
-           LDW.D1T2      *A9[5],B9
+           LDW.D1T2      *A9[5],B4
            NOP           2
            MPYSP.M1X     A4,B7,A4
            NOP           3
@@ -167,6 +187,10 @@ $C$L1:
            MPYSP.M1X     A3,B8,A3
            NOP           3
            MPYSP.M1X     A3,B5,A3
+           NOP           3
+           MPYSP.M2      B4,B7,B4
+           NOP           3
+           ADDSP.L1X     A3,B4,A3
            NOP           3
            STW.D1T1      A3,*A9[5]
            MPYSP.M2X     B5,A4,B9
@@ -180,7 +204,7 @@ $C$L1:
 
            LDW.D1T1      *A8[6],A4
            LDW.D1T1      *A5[6],A3
-           LDW.D1T2      *A9[6],B9
+           LDW.D1T2      *A9[6],B4
            NOP           2
            MPYSP.M1X     A4,B7,A4
            NOP           3
@@ -188,6 +212,10 @@ $C$L1:
            MPYSP.M1X     A3,B8,A3
            NOP           3
            MPYSP.M1X     A3,B5,A3
+           NOP           3
+           MPYSP.M2      B4,B7,B4
+           NOP           3
+           ADDSP.L1X     A3,B4,A3
            NOP           3
            STW.D1T1      A3,*A9[6]
            MPYSP.M2X     B5,A4,B9
@@ -201,7 +229,7 @@ $C$L1:
 
            LDW.D1T1      *A8[7],A4
            LDW.D1T1      *A5[7],A3
-           LDW.D1T2      *A9[7],B9
+           LDW.D1T2      *A9[7],B4
            NOP           2
            MPYSP.M1X     A4,B7,A4
            NOP           3
@@ -210,10 +238,15 @@ $C$L1:
            NOP           3
            MPYSP.M1X     A3,B5,A3
            NOP           3
+           MPYSP.M2      B4,B7,B4
+           NOP           3
+           ADDSP.L1X     A3,B4,A3
+           NOP           3
            STW.D1T1      A3,*A9[7]
            MPYSP.M2X     B5,A4,B9
            NOP           4
            STW.D1T2      B9,*A5[7]
+
 
 ; move B6 into B5 (volume R to volume(L)) for R processing
            MV.L2         B6,B5
