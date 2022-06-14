@@ -1,3 +1,13 @@
+# Спонсоры! Sponsors!
+## 🥇
+Не все герои носят плащи! Золотой спонсор, человек, который поверил и вложился в это дело до того, как у меня были результаты на руках.
+
+Not all heroes wear capes! Gold sponsor, person who believed and financed this endeavor before I had results to show.
+
+[![VK Personal](https://vk.com/images/vk16.png) Личная страница / Personal page](https://vk.ru)
+
+[![VK Musical](https://vk.com/images/vk16.png) Музыкальный проект / Musical project](https://vk.ru)
+
 # RTFM 🔥
 Позволяет использовать разные эффекты для L и R, особенно интересен для CDR. Плюсы, минусы и подводные камни [тут](howto/RTFM.ru.md).
 
@@ -21,29 +31,17 @@ Follow instructions in [here](howto/README.en.md).
 Спасибо! О том, как это можно сделать, читай в развороте.
 
 <details>
-  Я бы хотел использовать фичу Гитхаба "Спонсировать", но в России она "пока" недоступна. Если заработает, то перейду на нее.
-  
   Прочитай, пожалуйста, что для меня значит "поддержать":
   
   Во-первых, мне не нужны последние деньги. На дворе, как всегда, трудные времена, и лучше позаботиться о себе, а только потом раздавать деньги незнакомцам в интернетах. Я делаю этот проект для себя, по фану, и чтобы показать сообществу что это в принципе возможно. Пользуйся просто так, на здоровье.
-  
-  Во-вторых, я не хочу регулярных донатов. Я не думаю, что буду заниматься этим проектом постоянно, по крайней мере пока что, так что давай без обязательств. Вместо этого проставься кружкой кофе, когда эти "секретные материалы" оказались полезными.
-  
-  Ну и в-третьих, "поддержать" не значит "нанять". Я не беру заказы, не учу и не обещаю сделать Х если я получу У. Есть вопросы - задавай, если могу я отвечу бесплатно. Есть идея? Предлагай. Хочешь что-то обсудить? Запросто. Дело будет не за деньгами. И я не буду делать список "спонсоров", "патронов", как угодно назови, пока у меня просто страничка с чаевыми. Если Гитхаб таки запустит "спонсорство", и это будет происходить само по себе - милое дело. А до тех пор - я лучше потрачу время на разработку.
+    
+  Во-вторых, "поддержать" не значит "нанять". Я не беру заказы, не учу и не обещаю сделать Х если я получу У. Есть вопросы - задавай, если могу я отвечу бесплатно. Есть идея? Предлагай. Хочешь что-то обсудить? Запросто. Дело будет не за деньгами.
 
   Ставь класс если согласен:
   
-  Самый простой способ это ЮMoney
+  Самый простой способ в рублях это ЮMoney. На данный момент жизни, мне нужны и полезны рубли. Каждый рубль пойдет на пользу.
   
   [![yoomoney](media/iomoney.svg)](https://yoomoney.ru/quickpay/shop-widget?writer=buyer&targets=&targets-hint=За%20моды%20для%20Зумов&default-sum=100&button-text=13&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=4100117541059887)
-  
-  Там самая маленькая комиссия, но "из-за границы" может не сработать.
-  
-  Есть альтернатива под названием Ko-Fi.
-  
-  [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T792BE6)
-  
-  Международная, но там денежка отправляется в кругосветку и по грабительскому курсу.
 </details>
 
 # I want to support you with money
@@ -51,29 +49,15 @@ Follow instructions in [here](howto/README.en.md).
 Why thank you! See expandable section for more.
 
 <details>
-  I really wanted to use Github Sponsor option, but it is currently (ever?) not available in Russia. When it is available, I will migrate to it, if I ever have a need.
-  
   Please read some items below, and proceed if you want.
   
   First of all, I don't need your last money. These are, as usual, trying times, so make sure to take care of yourself before you tipping a stranger. I do this for myself and my fun, and hope for community to catch my ideas up. Use and have fun.
-  
-  Second, I don't want regular donations. I don't see myself doing this on repeated basis, at least for now, so let's keep this non-commitment. Rather, think of buying me a coffee when you find these pages useful.
-  
-  And finally, "tipping" does not mean "hiring". I don't take commissions, don't teach or promise to deliver X if I get Y. Have questions - ask them, I will answer them for free if I can. Have suggestions? Fire away. Want to discuss something? Sure. Money will not be a factor here. Plus, I will not list any "sponsors", "patrons", whatever, with just a tipping page. With Github Sponsors I think it is automated and easy, and I will gladly do that, when (if) it is available. Manually - I would rather spend my time on something else.
+    
+  Second, "tipping" does not mean "hiring". I don't take commissions, don't teach or promise to deliver X if I get Y. Have questions - ask them, I will answer them for free if I can. Have suggestions? Fire away. Want to discuss something? Sure. Money will not be a factor here.
   
   With that in mind:
   
-  Russian tipping provider is ЮMoney
-  
-  [![yoomoney](media/iomoney.svg)](https://yoomoney.ru/quickpay/shop-widget?writer=buyer&targets=&targets-hint=Tips%20for%20modding%20FX&default-sum=100&button-text=13&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=4100117541059887)
-  
-  It has least commission for me to take money out, but it does not work for everyone.
-  
-  As alternative, use Ko-Fi.
-  
-  [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T792BE6)
-  
-  Any tips there do a round-trip across the world, though.
+  Use Gitlab Sponsors! It should allow _you_ to pay internationally, and _me_ to both receive moneys and pay all due taxes.
 </details>
 
 # Now to the software development and official README
