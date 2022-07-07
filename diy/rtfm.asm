@@ -48,10 +48,10 @@ MULTIPLY_AND_WRITE .macro INDEX
            MPYSP.M1      A4,A3,A4    ; fx  x volume x [enable / disable]
  ||        MPYSP.M2      B8,B9,B8    ; dry x volume x [disable / enable]
            NOP           3
-           STW.D1T1      A4,*A5[INDEX]   ; to Output buffer
- ||        STW.D2T2      B8,*B6[INDEX]   ; to Dry buffer
-           STW.D1T2      B8,*A6[INDEX]   ; to Fx buffer
-.endm
+           STW.D1T1      A4,*A5[INDEX] ; to Output buffer
+ ||        STW.D2T2      B8,*B6[INDEX] ; to Dry buffer
+           STW.D1T2      B8,*A6[INDEX] ; to Fx buffer
+           .endm
 
            MULTIPLY_AND_WRITE 0
 
@@ -69,7 +69,7 @@ FORINDEX .macro INDEX
  ||        LDW.D2T2      *B6[INDEX],B8
            NOP           4
            MULTIPLY_AND_WRITE INDEX
-.endm
+           .endm
 
            FORINDEX 1
            FORINDEX 2
