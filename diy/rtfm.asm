@@ -21,6 +21,7 @@ Fx_FLT_RTFM:
            SUBAW.D1      A6,0x8,A6   ; decrement Fx buffer offset because each loop start with increment of it
  ||        SET.S2        B7,23,29,B7 ; set to 1.0 step 2
  ||        MVK.L2        2,B0        ; prepare loop count
+ ||        SUBAW.D2      B6,0x8,B6   ; decrement Dry buffer offset because each loop start with increment of it
 
 ; do calculations that need to be done once only
            MPYSP.M1      A8,A7,A8    ; adjusted left knob level
@@ -41,7 +42,7 @@ $C$L1:
            STW.D2T2      B8,*B5[0]   ; but always written to 0; this step is logic from inspiration
 
            LDW.D1T1      *++A6[8],A4 ; # increment address # read Fx buffer
- ||        LDW.D2T2      *B6[0],B8   ; read Dry buffer
+ ||        LDW.D2T2      *++B6[8],B8 ; # increment address # read Dry buffer
            NOP           4
 
 MULTIPLY_AND_WRITE .macro INDEX
