@@ -39,27 +39,11 @@ You should have a decompiled version of your asm. Why, you ask? Opcodes. You com
 _Pro tip: there is a thing called "Build targets", this allows you to set custom steps in IDE. I added a manual step that called disassembler on object file, and placed named as file where I expected. Saved some clicks.
 
 ## Make chunky opcode block
-Time to visit [Regex 101](https://regex101.com/) and do some copy-pasting. I recommend opening [regex cheatsheet](../diy/regex.txt) in another tab.
+Time to visit prepared expression at [Regex 101](https://regex101.com/r/yTVMQv) and do some copy-pasting. Please upvote if found it useful.
 
-Copy content of `foo_out.asm` to `Test string` field on website.
+Copy content of `foo_out.asm` to `Test string` field on website. Do not forget to remove sample data!
 
-Copy regex `remove addresses, leave only hex opcodes` as regex.
-
-_N.B. regex are tough to write. Verify visually that all opcodes are highlighted, and no garbage got in. If you have better regex, please share_
-
-Open "Export matches", choose "Plain text", UNcheck "Include full...". You should see only opcodes in result window.
-
-Copy those opcodes, there is a "Copy to clipboard" button.
-
-Close the window, paste copied opcodes as `Test string`. Don't forget to override, and not just append.
-
-Copy regex `rotate endiness` as regex. Enable "Substitution mode"
-
-Copy substitution string below regex as `Substitution`.
-
-Now, in sub-window below you have opcodes with swapped endiness. Copy them to text editor of your choice.
-
-Remove all newlines from result. In NPP, use extended mode and replace `\r\n` (or your equivalent) with nothing.
+Copy processed content from `List` output below. With magic of prepared regex, you have binary chunk ready.
 
 ## Embed opcodes into ZDL
 With this mixture on hand, you have yourself executable part of FX.
