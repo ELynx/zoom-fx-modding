@@ -68,6 +68,8 @@ I do not post any materials that are made by Zoom Co, explicitly. I would rather
 
 You may see Zoom Co related imagery in media files I use for demonstration. All images, fonts and names are property and trademark of Zoom Co and I do my best to use them fairly.
 
+VK logo is embedded by the link to official web site. This project has no relation or affiliation with VK, I only use their logo as signifier of where link directs to.
+
 ЮMoney logo used in this README is downloaded from official press / media kit. This project has no relation or affiliation with ЮMoney, I only use them as tips provider.
 
 If you (whoever you are, personal or corporate) see something that infringes on your property, let me know. I will work it out with you to my best speed possible, down to removal if that is only way to settle it.
