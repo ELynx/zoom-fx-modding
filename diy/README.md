@@ -12,4 +12,4 @@
 
 [Amazing QR Code generator that I use](https://github.com/nayuki/QR-Code-generator)
 
-[Automated debug stripper, half working](shrinker.py)
+[Automated debug information stripper, makes ZDL files smaller a bit](shrinker.py)
