@@ -23,6 +23,10 @@ After you have ZDL file made and running, time to make it separate item from ori
 
 This is logical conclusion for making your first effect.
 
+[Chapter 5 - Shrinker](CH_5.md).
+
+A small tool with sharp edges to mass-make ZDLs a bit smaller, one time.
+
 # General downloads and tools
 To get the flow started, you will need:
 * A hex editor of your choice. I used [wxMEdit](https://wxmedit.github.io/).
