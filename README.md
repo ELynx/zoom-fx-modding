@@ -1,13 +1,9 @@
 # Спонсоры! Sponsors!
-🥇 Не все герои носят плащи! Золотой спонсор, человек, который поверил и вложился в это дело до того, как у меня были результаты на руках.
+🥇 Не все герои носят плащи! Марк, золотой спонсор, человек, который поверил и вложился в это дело до того, как у меня были результаты на руках.
 
-🥇 Not all heroes wear capes! Gold sponsor, person who believed and financed this endeavor before I had results to show.
+🥇 Not all heroes wear capes! Mark, gold sponsor, person who believed and financed this endeavor before I had results to show.
 
-[![YT](https://vk.com/images/vk16.png) YouTube](https://youtube.com/channel/UCuNjQLWeYezMKmJBICgsn2g)
-
-[![VK](https://vk.com/images/vk16.png) VK](https://vk.com/club23918120)
-
-[<img src="media/tg.svg" alt="TG" width="16" height="16"/> Telegram](https://t.me/markambient)
+[<img src="media/youtube.png" alt="YouTube" width="16" height="16"/> YouTube](https://youtube.com/channel/UCuNjQLWeYezMKmJBICgsn2g) [![VK](https://vk.com/images/vk16.png) VK](https://vk.com/club23918120) [<img src="media/tg.svg" alt="TG" width="16" height="16"/> Telegram](https://t.me/markambient)
 
 # RTFM 🔥
 Позволяет использовать разные эффекты для L и R, особенно интересен для CDR. Плюсы, минусы и подводные камни [тут](howto/RTFM.ru.md).
@@ -69,7 +65,7 @@ I do not post any materials that are made by Zoom Co, explicitly. I would rather
 
 You may see Zoom Co related imagery in media files I use for demonstration. All images, fonts and names are property and trademark of Zoom Co and I do my best to use them fairly.
 
-YouTube logo is embedded by the link to official web site. This project has no relation or affiliation with YouTube, I only use their logo as signifier of where link directs to.
+YouTube logo used in this README is downloaded from official press / media kit. This project has no relation or affiliation with YouTube, I only use their logo as signifier of where link directs to.
 
 VK logo is embedded by the link to official web site. This project has no relation or affiliation with VK, I only use their logo as signifier of where link directs to.
 
