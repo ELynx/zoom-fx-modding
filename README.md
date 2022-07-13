@@ -65,11 +65,11 @@ I do not post any materials that are made by Zoom Co, explicitly. I would rather
 
 You may see Zoom Co related imagery in media files I use for demonstration. All images, fonts and names are property and trademark of Zoom Co and I do my best to use them fairly.
 
-YouTube logo used in this README is downloaded from official press / media kit. This project has no relation or affiliation with YouTube, I only use their logo as signifier of where link directs to.
+YouTube logo used in this README and other written materials is downloaded from official press / media kit. This project has no relation or affiliation with YouTube, I only use their logo as signifier of where link directs to.
 
-VK logo is embedded by the link to official web site. This project has no relation or affiliation with VK, I only use their logo as signifier of where link directs to.
+VK logo used in this README and other written materials is embedded by the link to official web site. This project has no relation or affiliation with VK, I only use their logo as signifier of where link directs to.
 
-Telegram logo used in this README is downloaded from official press / media kit. This project has no relation or affiliation with Telegram, I only use their logo as signifier of where link directs to.
+Telegram logo used in this README and other written materials is downloaded from official press / media kit. This project has no relation or affiliation with Telegram, I only use their logo as signifier of where link directs to.
 
 ЮMoney logo used in this README is downloaded from official press / media kit. This project has no relation or affiliation with ЮMoney, I only use them as tips provider.
 
