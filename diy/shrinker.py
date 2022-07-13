@@ -46,8 +46,8 @@ for inputFile in inputFiles:
                     shrunk.write(restOfHeaders)
                     shrunk.write(aSmallerElf)
 
-                    print inputFile
-                    print ' ELF section before ' + str(len(anElf))
-                    print ' ELF section after  ' + str(len(aSmallerElf))
+                    print (inputFile)
+                    print (' ELF section before ' + str(len(anElf)))
+                    print (' ELF section after  ' + str(len(aSmallerElf)))
         finally:
             os.remove(path)
