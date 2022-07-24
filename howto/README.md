@@ -1,3 +1,3 @@
-[⚪🔵🔴 На русском](README.ru.md)
+[⚪🔵⚪ На русском](README.ru.md)
 
 [🌐🌐🌐 International](README.en.md)
