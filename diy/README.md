@@ -13,3 +13,5 @@
 [Amazing QR Code generator that I use](https://github.com/nayuki/QR-Code-generator)
 
 [Automated debug information stripper, makes ZDL files smaller a bit](shrinker.py)
+
+[Source code for business logic part of Div0](div0.asm)
