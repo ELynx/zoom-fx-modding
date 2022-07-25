@@ -34,6 +34,7 @@ Lunar IPS modifies files in-place, make a source file for it. Remember to always
 * Make a copy of it, and name it appropriately:
   * RainSel - `RAINSEL.ZDL`
   * RTFM - `RTFM.ZDL`
+  * Div0 - `Div0.ZDL`
 
 ## Modify copied ZDL
 Do this step for each .ips file you want to use. For `FOO.ips` I assume prepared copy of `FOO.ZDL` from step above.
@@ -60,9 +61,13 @@ RainSel
 
 RTFM
 
-`XXX;RTFM;RTFM.ZDL;;MS-50G;MS-60B;MS-70CDR;G1on;B1on;R.T.F.M. EN;R.T.F.M. RU;FLTR;0x02;1.00`
+`XXX;RTFM;RTFM.ZDL;;MS-50G;MS-60B;MS-70CDR;G1on;B1on;R.T.F.M. EN;R.T.F.M. RU;FLTR;0x02;1.10`
 
-* Replace XXX with appropriate number(s) to continue indexing. For me these were 235 and 236 for both FX.
+RTFM
+
+`XXX;Div0;Div0.ZDL;;MS-50G;MS-60B;MS-70CDR;G1on;B1on;Div0 EN;Div0 RU;FLTR;0x02;1.00`
+
+* Replace XXX with appropriate number(s) to continue indexing. For me these were 235, 236 and 237 for three FX.
 
 # Section 3 - prepare and flash custom firmware
 Firmware is created with Zoom Firmware Manager. Launch it's executable from `Z:\FOO` folder, and follow the instructions for it.
@@ -93,6 +98,10 @@ Congratulations, you are done! (Or my condolences, if this somehow failed.)
 [RailSel](RainSel.en.md)
 
 [RTFM](RTFM.en.md)
+
+For effects to work without mixing channels on CDR use Div0.
+
+[Div0](Div0.en.md)
 
 # Section 5 - restoring original firmware
 If you want to roll back the changes, download original firmware update from official Zoom Co web site, and do the flashing steps again.

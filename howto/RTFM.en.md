@@ -1,6 +1,6 @@
 # RTFM
 ## About this document
-This is a page with instructions for RTFM v1.0.0
+This is a page with instructions for RTFM v1.1.0
 
 Be sure that you are reading correct version.
 
@@ -8,15 +8,17 @@ If you followed the QR code, you should be set, since each release comes with re
 
 If you opened this page manually, and version is different, look for tag that matches your version. Corresponding picker is usually to the top left of document view. It usually says something like `main` by default. When clicked, it will provide options `Branches` and `Tags`. Choose `Tags` and choose tag that starts with RTFM and the gives your version.
 
-## Inputs and outputs
-This mod is intended to be used most with MS-70CDR to allow parallel processing of two signals on same unit. As such, it makes use of both L and R on inputs and outputs.
+## What it does
+This mod is intended to be used most with MS-70CDR to allow parallel processing of two signals on same unit.
 
-This _can_ run on MS-50G (I expect it to) and MS-60B (I tested it to), but will lack versatility. On my MS-60B it works in "Off" position, and routes single input signal to two sets of effects, then to different outputs.
+Requires [Div0](Div0.md) to work, otherwise mixes Left and Right together, and overall has shitty behavior.
 
-Knobs allow for adjusting gain of Left and Right channel volumes, plus you can use volume knobs inside individual effects as well.
+I recommend starting Div0 with LEFT 0, RIGHT 100, ON. Later turn off Div0 only if some effect mixes Left to the mix, because it may turn off more than needed.
 
 ## Capabilities and how to make FX chains
 TL;DR: most effects will work before, _only stereo_ effects will work after well. Only stereo _with independent channels_ will work superb.
+
+Div0 goes first. Then 1 group of effects. Then RTFM. Then 2 group of effects. If stars align, one channel will be processed by group 1, another by group 2. Button toggles which channel-group affinity.
 
 This effect does not do any _magic_ to signal processing, so results are not _magical_.
 
@@ -28,27 +30,18 @@ For one channel, effects are "silenced", and routed directly to same side Output
 
 For another channel, processed signal is replaced with original signal that was preserved. So, any FX is "forgotten" and "chain two" logic starts.
 
-So, all effects after RTFM _have to support stereo_ for correct processing. Most of stock effects I [tested on MS-60B](#after-rtfm) make various degrees of mess. Pick ones that support independent stereo processing, and turn that processing on.
+For best performance, effects in 2 group should not mix channels together. Thus, only effects with independent stereo work 100% well. As examples I can list `DriveEcho`, `CoronaTri` etc.
 
-## Tested effects
-### Before RTFM
-Effects I tested __on MS-60B__:
+1 group can have almost everything, if effect is not implemented in super-strange way. I tried mono effects, such as pitchers, they work quite well.
 
-* ZNR - Works but does not do much because noise returns for chain two.
-* BaFzSmile - Works, staple of my test sound.
+For tech-minded, here is the diagram:
 
-### After RTFM
-Effects I tested __on MS-60B__:
+<img src="rtfm.png">
 
-* ZNR - Works, with some tweaks is good with mono in. With stereo in I don't think it gates channels independently, so YMMW.
-* VinFLNGR - Works, but leaks signal across channels. Meh.
-* StereoDly - Works, and I think respects two chain processing with mono in.
-* DriveEcho - Works when "Stereo" is on. Nice sound.
+State is shown for RTFM ON, when 1 group processes Left channel. When effect is OFF, channels swap their logic.
 
 ## Closing words
-This mod works with all the limitations original effects have regarding to stereo processing, and then some. I think Zoom Co already did great work with stereo effects, and this mod is mostly pushing multistomp to the limits.
-
-That said, experiment. This has a limited working effect combination, but for OD on one channel and some echo on other, it should get the job done.
+This mod works with all the limitations original effects have regarding to stereo processing, and then some. I think Zoom Co already did great work with stereo effects, and this mod is mostly pushing multistomp to the limits. That said, experiment.
 
 ## Tips
 If you found this useful, you can leave me some tips, instructions are [here](../README.md#i-want-to-support-you-with-money).

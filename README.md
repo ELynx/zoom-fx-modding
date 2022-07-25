@@ -3,14 +3,14 @@
 
 🥇 Not all heroes wear capes! Mark, gold sponsor, person who believed and financed this endeavor before I had results to show.
 
-[<img src="media/youtube.png" alt="YouTube" width="16" height="16"/> YouTube](https://youtube.com/channel/UCuNjQLWeYezMKmJBICgsn2g) [![VK](https://vk.com/images/vk16.png) VK](https://vk.com/club23918120) [<img src="media/tg.svg" alt="TG" width="16" height="16"/> Telegram](https://t.me/markambient)
+[<img src="media/youtube.svg" alt="YouTube" width="16" height="16"/> YouTube](https://youtube.com/channel/UCuNjQLWeYezMKmJBICgsn2g) [<img src="media/vk.svg" alt="VK" width="16" height="16"/> VK](https://vk.com/club23918120) [<img src="media/tg.svg" alt="TG" width="16" height="16"/> Telegram](https://t.me/markambient)
 
-# RTFM 🔥
-Позволяет использовать разные эффекты для L и R, особенно интересен для CDR. Плюсы, минусы и подводные камни [тут](howto/RTFM.ru.md).
+# 🔥 RTFM ⥢ Div0 🔥
+Позволяют использовать разные эффекты для L и R, особенно интересен для CDR. Плюсы, минусы и подводные камни [тут](howto/Div0.ru.md) и [тут](howto/RTFM.ru.md).
 
-Allows to use different effects for L and R, especially good for CDR. Read more [here](howto/RTFM.en.md).
+Allow to use different effects for L and R, especially good for CDR. Read more [here](howto/Div0.en.md) and [here](howto/RTFM.en.md).
 
-<img src="media/rtfm_photo.jpg" width=25% height=25%>
+<img src="media/rtfm_photo.jpg" width=25% height=25%> ⥢ <img src="media/div0_photo.jpg" width=25% height=25%>
 
 # RainSel
 Позволяет смешивать чистый и обработанный сигналы, или выводить их по отдельности на L и R. Подробности [тут](howto/RainSel.ru.md).
@@ -65,9 +65,9 @@ I do not post any materials that are made by Zoom Co, explicitly. I would rather
 
 You may see Zoom Co related imagery in media files I use for demonstration. All images, fonts and names are property and trademark of Zoom Co and I do my best to use them fairly.
 
-YouTube logo used in this README and other written materials is downloaded from official press / media kit. This project has no relation or affiliation with YouTube, I only use their logo as signifier of where link directs to.
+YouTube logo used in this README and other written materials is downloaded from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:YouTube_social_white_squircle.svg). This project has no relation or affiliation with YouTube, I only use their logo as signifier of where link directs to.
 
-VK logo used in this README and other written materials is embedded by the link to official web site. This project has no relation or affiliation with VK, I only use their logo as signifier of where link directs to.
+VK logo used in this README and other written materials is downloaded from official press / media kit. This project has no relation or affiliation with VK, I only use their logo as signifier of where link directs to.
 
 Telegram logo used in this README and other written materials is downloaded from official press / media kit. This project has no relation or affiliation with Telegram, I only use their logo as signifier of where link directs to.
 
