@@ -27,6 +27,14 @@ This is logical conclusion for making your first effect.
 
 A small tool with sharp edges to mass-make ZDLs a bit smaller, one time.
 
+Chapter 6 - Divide by zero
+
+After a lot of effort being spent on making RTFM I realized that single effect will not work, at least to my knowledge. I made second effect Div0 that "separated" left and right channels on Dry buffer. It feels like this was a compatibility workaround on behalf of Zoom Co team to insure compatibility between mono -> stereo and stereo -> stereo devices. Even Dry buffer has space for 2nd channel.
+
+I would not repeat myself here, please read [Div0](../howto/Div0.md) page in language of your choice to see what is done with buffer. And some explanation was added to [R.T.F.M.](../howto/RTFM.md) with some diagrams.
+
+As side effect, I quite improved [asm for R.T.F.M.](../diy/rtfm.asm), not yet C or C++, not loop unroll, but quite better. [asm for Div0](../diy/div0.asm) is derivative of that.
+
 # General downloads and tools
 To get the flow started, you will need:
 * A hex editor of your choice. I used [wxMEdit](https://wxmedit.github.io/).
