@@ -11,7 +11,7 @@ If you opened this page manually, and version is different, look for tag that ma
 ## What it does
 This mod is intended to be used most with MS-70CDR to allow parallel processing of two signals on same unit.
 
-Requires [Div0](Div0.en.md) to work, otherwise mixes Left and Right together, and overall has shitty behavior.
+Requires [Div0](Div0.md) to work, otherwise mixes Left and Right together, and overall has shitty behavior.
 
 I recommend starting Div0 with LEFT 0, RIGHT 100, ON. Later turn off Div0 only if some effect mixes Left to the mix, because it may turn off more than needed.
 
