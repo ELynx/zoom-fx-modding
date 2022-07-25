@@ -1,6 +1,5 @@
 # RainSel
-
-[Video demo](../media/rainsel_demo.mp4)
+N.B. RailSel is my first effect, and now it, and text below, are outdated. Like [this Issue](https://github.com/ELynx/zoom-fx-modding/issues/7) to let me know if you need an update. Otherwise, text below is old.
 
 RailSel was not meant to be used as on/off effect (however who am I to tell you what to do), rather as support brick at the end of your chain.
 
