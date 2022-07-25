@@ -12,8 +12,9 @@ Fx_FLT_Div0:
            LDW.D1T1      *A3[4],A7   ; probably knob level multiplier so that 100 on knob means 1.0 as float
            LDW.D1T1      *A3[5],A8   ; left knob value multiplier
            LDW.D1T1      *A3[6],A9   ; right knob value multiplier
- ||        LDW.D2T2      *B5[0],B5   ; prepare destination address, this logic is from inspiration
            LDW.D1T2      *A3[0],B7   ; effect on/off multiplier, 1.0 when on, 0.0 when off
+
+           LDW.D2T2      *B5[0],B5   ; prepare destination address, this logic is from inspiration
 
            SUBAW.D1      A6,0x8,A6   ; decrement Fx buffer offset because each loop start with increment of it
  ||        MVK.L2        2,B0        ; prepare loop count
@@ -50,10 +51,10 @@ MULTIPLY_AND_WRITE .macro INDEX
 ; and that is way too complex for this excersise
 
 FORINDEX .macro INDEX
-           LDW.D1T1      *A6[INDEX],A4
- ||        LDW.D2T2      *B4[INDEX],B8
+           LDW.D1T1      *A6[INDEX],A4 ; read Fx buffer
+ ||        LDW.D2T2      *B4[INDEX],B8 ; read magic value
            NOP           4
-           STW.D2T2      B8,*B5[0]
+           STW.D2T2      B8,*B5[0]     ; write magic value
 
            MULTIPLY_AND_WRITE INDEX
            .endm
@@ -69,8 +70,8 @@ FORINDEX .macro INDEX
 ; at the end of iteration
 
 ; volume R to volume for R processing
-           MV.S1         A30,A8
-; set on/off to 1.0 for processing
+           MV.S1         A9,A8
+; set on/off to 1.0 for processing R
  ||        MVK.L2        0,B7        ; set to 1.0 step 1
            SET.S2        B7,23,29,B7 ; set to 1.0 step 2
 
