@@ -9,30 +9,20 @@ If you followed the QR code, you should be set, since each release comes with re
 If you opened this page manually, and version is different, look for tag that matches your version. Corresponding picker is usually to the top left of document view. It usually says something like `main` by default. When clicked, it will provide options `Branches` and `Tags`. Choose `Tags` and choose tag that starts with RTFM and the gives your version.
 
 ## What it does
-This mod is intended to be used most with MS-70CDR to allow parallel processing of two signals on same unit.
-
-Requires [Div0](Div0.md) to work, otherwise mixes Left and Right together, and overall has shitty behavior.
-
-I recommend starting Div0 with LEFT 0, RIGHT 100, ON. Later turn off Div0 only if some effect mixes Left to the mix, because it may turn off more than needed.
+This mod is intended to be used most with MS-70CDR to allow independent processing of two signals on same unit.
 
 ## Capabilities and how to make FX chains
-TL;DR: most effects will work before, _only stereo_ effects will work after well. Only stereo _with independent channels_ will work superb.
+Requires [Div0](Div0.md) to work; otherwise mixes Left and Right together.
 
-Div0 goes first. Then 1 group of effects. Then RTFM. Then 2 group of effects. If stars align, one channel will be processed by group 1, another by group 2. Button toggles which channel-group affinity.
+Most effects will work before, _only stereo_ effects will work after well. Only stereo _with independent channels_ will work superb.
 
-This effect does not do any _magic_ to signal processing, so results are not _magical_.
+Div0 goes first. Then 1 group of effects. Then RTFM. Then 2 group of effects. For best performance, effects in 2 group should not mix channels together. Thus, only effects with independent stereo work 100% well. As examples I can list `DriveEcho`, `CoronaTri` etc.
 
-All effects before RTFM process signal as usual. This means that most of stock effects I [tested on MS-60B](#before-rtfm) worked without problem, even if results are not superb.
+I recommend starting Div0 with LEFT 100, RIGHT 0, ON.
 
-Result of "before" effects is then processed by RTFM.
+Set up RTFM to LEFT 100, RIGHT 100, ON.
 
-For one channel, effects are "silenced", and routed directly to same side Output. This achieves "chain one" logic.
-
-For another channel, processed signal is replaced with original signal that was preserved. So, any FX is "forgotten" and "chain two" logic starts.
-
-For best performance, effects in 2 group should not mix channels together. Thus, only effects with independent stereo work 100% well. As examples I can list `DriveEcho`, `CoronaTri` etc.
-
-1 group can have almost everything, if effect is not implemented in super-strange way. I tried mono effects, such as pitchers, they work quite well.
+Turn off Div0 only if some effect mixes Left to the mix, because it may turn off more than needed.
 
 For tech-minded, here is the diagram:
 
