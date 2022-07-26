@@ -16,13 +16,31 @@ Requires [Div0](Div0.md) to work; otherwise mixes Left and Right together.
 
 Most effects will work before, _only stereo_ effects will work after well. Only stereo _with independent channels_ will work superb.
 
-Div0 goes first. Then 1 group of effects. Then RTFM. Then 2 group of effects. For best performance, effects in 2 group should not mix channels together. Thus, only effects with independent stereo work 100% well. As examples I can list `DriveEcho`, `CoronaTri` etc.
+Div0 goes first. Then 1 group of effects. Then RTFM. Then 2 group of effects. For best performance, effects in 2 group should not mix channels together. Thus, only effects with independent stereo work 100% well. From default firmware of CDR I can list:
+  * Stereo Guitar Eq
+  * Stereo Bass Eq
+  * ZNR
+  * Noise Gate
+  * Dirty Gate
+  * Tremolo Delay
+  * Stereo Delay
+  * Slow Attack Delay
+  * Slap Back Delay (turn on Stereo)
+  * LO-FI Delay
+  * Auto Pan Delay
+  * Drive Echo (turn on Stereo)
+  * CoronaTri
+  * CoronaCho
 
 I recommend starting Div0 with LEFT 100, RIGHT 0, ON.
 
 Set up RTFM to LEFT 100, RIGHT 100, ON.
 
 Turn off Div0 only if some effect mixes Left to the mix, because it may turn off more than needed.
+
+A simple chain to have Bass Octaver on one channel and Drive Echo on the other would look like this:
+
+(OUT) <= [Drive Echo] <= [RTFM] <= [Bass Oct] <= [Div0] <= (IN)
 
 For tech-minded, here is the diagram:
 
