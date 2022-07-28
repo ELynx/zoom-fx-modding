@@ -1,16 +1,29 @@
 # expect strip6x from toolset to be available as direct command
 # see Library section of repository for toolset download
 
-# works on one folder at a time
-
 import os
 import tempfile
 
-inputFilesAndFolders = os.listdir()
+# from https://stackoverflow.com/a/120948/15529473
+
+
+def listdir_fullpath_current():
+    return [os.path.join(f) for f in os.listdir()]
+
+
+def listdir_fullpath(d):
+    return [os.path.join(d, f) for f in os.listdir(d)]
+
+
+inputFilesAndFolders = listdir_fullpath_current()
 
 inputFiles = []
 
 for inputFileOrFolder in inputFilesAndFolders:
+    if os.path.isdir(inputFileOrFolder):
+        moreFilesAndFolders = listdir_fullpath(inputFileOrFolder)
+        for fileOrFolder in moreFilesAndFolders:
+            inputFilesAndFolders.append(fileOrFolder)
     if os.path.isfile(inputFileOrFolder):
         if inputFileOrFolder.endswith('ZDL'):
             inputFiles.append(inputFileOrFolder)
@@ -28,8 +41,14 @@ for inputFile in inputFiles:
         assert anElf[1] == 69  # E
         assert anElf[2] == 76  # L
         assert anElf[3] == 70  # F
+
         original.close()
-        os.rename(inputFile, inputFile + '.bak')
+
+        if (os.path.exists(inputFile + '.bak')):
+            os.remove(inputFile)
+        else:
+            os.rename(inputFile, inputFile + '.bak')
+
         (fd, path) = tempfile.mkstemp()
         try:
             with os.fdopen(fd, 'wb') as tmp:
@@ -46,8 +65,8 @@ for inputFile in inputFiles:
                     shrunk.write(restOfHeaders)
                     shrunk.write(aSmallerElf)
 
-                    print (inputFile)
-                    print (' ELF section before ' + str(len(anElf)))
-                    print (' ELF section after  ' + str(len(aSmallerElf)))
+                    print(inputFile)
+                    print(' ELF section before ' + str(len(anElf)))
+                    print(' ELF section after  ' + str(len(aSmallerElf)))
         finally:
             os.remove(path)
