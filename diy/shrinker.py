@@ -26,7 +26,12 @@ for inputFileOrFolder in inputFilesAndFolders:
             inputFilesAndFolders.append(fileOrFolder)
     if os.path.isfile(inputFileOrFolder):
         if inputFileOrFolder.endswith('ZDL'):
-            inputFiles.append(inputFileOrFolder)
+            # no idea why but CMN_ files glitch out after this, skip them
+            if (inputFileOrFolder.find('CMN_') == -1):
+                inputFiles.append(inputFileOrFolder)
+            else:
+                print(inputFileOrFolder)
+                print(' is a CMN file, ignored')
 
 for inputFile in inputFiles:
     with open(inputFile, 'rb') as original:
