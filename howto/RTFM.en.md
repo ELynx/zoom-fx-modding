@@ -50,6 +50,3 @@ State is shown for RTFM ON, when 1 group processes Left channel. When effect is 
 
 ## Closing words
 This mod works with all the limitations original effects have regarding to stereo processing, and then some. I think Zoom Co already did great work with stereo effects, and this mod is mostly pushing multistomp to the limits. That said, experiment.
-
-## Tips
-If you found this useful, you can leave me some tips, instructions are [here](../README.md#i-want-to-support-you-with-money).
