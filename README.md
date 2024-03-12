@@ -24,39 +24,6 @@ Allows to mix dry and wet signals, or output them independently on L and R. Read
 
 Follow instructions in [here](howto/README.en.md).
 
-# Хочу поддержать материально
-Спасибо! О том, как это можно сделать, читай в развороте.
-
-<details>
-  Прочитай, пожалуйста, что для меня значит "поддержать":
-  
-  Во-первых, мне не нужны последние деньги. На дворе, как всегда, трудные времена, и лучше позаботиться о себе, а только потом раздавать деньги незнакомцам в интернетах. Я делаю этот проект для себя, по фану, и чтобы показать сообществу что это в принципе возможно. Пользуйся просто так, на здоровье.
-    
-  Во-вторых, "поддержать" не значит "нанять". Я не беру заказы, не учу и не обещаю сделать Х если я получу У. Есть вопросы - задавай, если могу я отвечу бесплатно. Есть идея? Предлагай. Хочешь что-то обсудить? Запросто. Дело будет не за деньгами.
-
-  Ставь класс если согласен:
-  
-  Самый простой способ в рублях это ЮMoney. На данный момент жизни, мне нужны и полезны рубли. Каждый рубль пойдет на пользу.
-  
-  [![yoomoney](media/iomoney.svg)](https://yoomoney.ru/quickpay/shop-widget?writer=buyer&targets=&targets-hint=За%20моды%20для%20Зумов&default-sum=100&button-text=13&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=4100117541059887)
-</details>
-
-# I want to support you with money
-
-Why thank you! See expandable section for more.
-
-<details>
-  Please read some items below, and proceed if you want.
-  
-  First of all, I don't need your last money. These are, as usual, trying times, so make sure to take care of yourself before you tipping a stranger. I do this for myself and my fun, and hope for community to catch my ideas up. Use and have fun.
-    
-  Second, "tipping" does not mean "hiring". I don't take commissions, don't teach or promise to deliver X if I get Y. Have questions - ask them, I will answer them for free if I can. Have suggestions? Fire away. Want to discuss something? Sure. Money will not be a factor here.
-  
-  With that in mind:
-  
-  Use Gitlab Sponsors! It should allow _you_ to pay internationally, and _me_ to both receive moneys and pay all due taxes.
-</details>
-
 # Now to the software development and official README
 ## First of all
 This is by no means supported or otherwise authorized by Zoom Corporation.
@@ -70,8 +37,6 @@ YouTube logo used in this README and other written materials is downloaded from 
 VK logo used in this README and other written materials is downloaded from official press / media kit. This project has no relation or affiliation with VK, I only use their logo as signifier of where link directs to.
 
 Telegram logo used in this README and other written materials is downloaded from official press / media kit. This project has no relation or affiliation with Telegram, I only use their logo as signifier of where link directs to.
-
-ЮMoney logo used in this README is downloaded from official press / media kit. This project has no relation or affiliation with ЮMoney, I only use them as tips provider.
 
 If you (whoever you are, personal or corporate) see something that infringes on your property, let me know. I will work it out with you to my best speed possible, down to removal if that is only way to settle it.
 
