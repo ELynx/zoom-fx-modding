@@ -57,6 +57,3 @@ On Dry buffer, for Left channel, operation depends on a Div0 state:
 On Dry buffer, for Right channel, it is simply written with Fx buffer. This means, if Div0 is first in the chain, silence is replaced with Dry Right.
 
 In total, Dry Left and Right are now available on relatively safe buffer to be used on following effects.
-
-## Tips
-If you found this useful, you can leave me some tips, instructions are [here](../README.md#i-want-to-support-you-with-money).
